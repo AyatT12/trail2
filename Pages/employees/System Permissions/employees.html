@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> نظام الادارة - الموظفين</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo:500,400,700" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../../../style/Layout.css">
+    <link rel="stylesheet" href="../../../style/content.css">
+    <!-- <link rel="stylesheet" href="../../../style/english.css"> -->
+
+</head>
+
+<body>
+    <div id="wrapper" class="Branches-wrapper d-flex flex-column ">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="nav-container container-fluid">
+                <!-- Company Logo -->
+                <div class="navbar-brand d-flex align-items-end gap-4">
+                    <a href="../../../index.html" class="Company-Logo"><img src="../../../images/kodi logo.png"
+                            alt="Company Logo" class="Company-Logo-img"></a>
+                    <p class="m-0 Company-name">شركة كدي لتأجير السيارات</p>
+                    <i class="fa-solid fa-bars toggle4 mobile-icon nav-icon"></i>
+                </div>
+
+
+                <!-- User Information -->
+                <div class="icons-content">
+                    <div class="d-flex">
+                        <div class="navbar-nav">
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex" href="#" id="userDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="ms-2  text-start">
+                                        <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
+                                        <p class="m-0">مشرف علي الفروع</p>
+                                    </div>
+                                    <img src="../../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                        alt="User Avatar" class="rounded-circle User-Avatar">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                     <li><a class="dropdown-item userDropdown-options" href="../../../Pages/Account/Account.html">حسابي <img
+                                                src="../../../images/Frame (2).svg" /></a></li>
+                                   <li><a class="dropdown-item userDropdown-options" href="../../../Pages/Account/NewPassword.html">تغيير كلمة السر <img
+                                                src="../../../images/Frame (1).svg" /></a></li>
+                                    <li><a class="dropdown-item userDropdown-options" href="#"> الأنظمه <img
+                                                src="../../../images/Frame (3).svg" /></a></li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item userDropdown-options " href="#">تسجيل الخروج <img
+                                                class="logout" src="../../../images/Frame (4).svg" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap:15px">
+                        <!-- <img src="../../../images/Frame 2608795.svg" class=" sms nav-icon"
+                            style="width: 28;height: 28px;" />
+                        <img src="../../../images/whatsup.svg" class=" whatsup nav-icon" /> -->
+                        <h5 class="m-0 nav-icon">En</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+        <nav class="wornings navbar-expand-lg navbar-light py-2 ">
+            <p>الشركة موقوفة, تم تقليص بعض الخدمات </p>
+        </nav>
+        <div class="container-fluid h-100 main-container-fluid">
+            <div class="row h-100 flex-nowrap">
+                <div class="col-auto sidebar1-col close close">
+                    <!-- Sidebar -->
+                    <nav class="sidebar close">
+                        <header>
+                            <i class='bx bx-chevron-right toggle'></i>
+                        </header>
+
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <ul class="menu-links">
+                                    <li class="nav-link" >
+                                        
+                                         <img src="../../../images/comany .svg" class="icon"  data-bs-toggle="collapse" href="#company-items" aria-expanded="false" aria-controls="#company-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#company-items" aria-expanded="false" aria-controls="#company-items">الشركة </span>
+                                       
+                                    </li>
+                                    <div id="company-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../../Pages/company/Branches/Branches.html"> الفروع <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/company/owners/owners.html"> الملاك <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">العقود <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link" >
+                                    <a href="#">
+                                        <img src="../../../images/cars.svg" class="icon" />
+                                        <span class="text nav-text"> السيارات </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/tenants.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#tenant-items" aria-expanded="false"
+                                                aria-controls="#tenant-items"> المستأجرين </span>
+                                        </a>
+                                    </li>
+                                    <div id="tenant-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                              <img src="../../../images/employees.svg" class="icon"  data-bs-toggle="collapse" href="#employees-items" aria-expanded="false" aria-controls="#employees-items"/>
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#employees-items" aria-expanded="false" aria-controls="#employees-items"> الموظفين </span>
+                                        </a>
+                                    </li>
+                                    <div id="employees-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../../Pages/employees/employees list/employees.html"> قائمة الموظفين <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                             <a class="collapse-item active" href="../../../Pages/employees/System Permissions/employees.html"> صلاحيات النظام <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                             <a class="collapse-item" href="../../../pages/employees/Contract Permissions/employees.html">صلاحيات العقد <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <img src="../../../images/accounts.svg" class="icon" />
+                                            <span class="text nav-text"> الحسابات </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/reports.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#reports-items" aria-expanded="false"
+                                                aria-controls="#reports-items">التقارير </span>
+                                        </a>
+                                    </li>
+                                    <div id="reports-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/statics.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#statics-items" aria-expanded="false"
+                                                aria-controls="#statics-items"> الإحصائيات </span>
+                                        </a>
+                                    </li>
+                                    <div id="statics-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/services.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#services-items" aria-expanded="false"
+                                            aria-controls="#services-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#services-items" aria-expanded="false"
+                                                aria-controls="#services-items">الخدمات</span>
+                                        </a>
+                                    </li>
+                                    <div id="services-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="../../../Pages/Services/banks/Banks.html"> البنوك <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item"
+                                                href="../../../Pages/Services/sellingPoints/sellingPoints.html"> نقاط البيع <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item"
+                                                href="../../../Pages/Services/techncal-connect/techncal-connect.html"> الربط
+                                                التقني <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                            <a class="collapse-item" href="../../../Pages/Services/drivers/drivers.html">
+                                                السائقين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                            <a class="collapse-item" href="../../../Pages/Services/Alerts/Alerts.html"> التنبيهات
+                                                <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/Services/Membership/Membership.html">
+                                                العضويات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col  d-flex align-items-center justify-content-center">
+                    <div class="container main-container">
+                        <form action="">
+                            <div class="row g-3 mb-5">
+                                <div class="col">
+                                    <h3> قائمة الموظفين </h3>
+                                </div>
+                                <div class="col-12 col-lg-6 d-flex justify-content-end">
+
+                                    <div class="col-12 col-md-8 search-input-col">
+                                        <div class="form-outline w-100" data-mdb-input-init>
+                                            <span class="fa fa-search"></span>
+                                            <input type="search" id="search" class="form-control inputs search-input"
+                                                name="search" aria-label="Search" autofocus autocomplete="off" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <div class="row table-row px-3">
+                                <div class="col  scroll-table-div  table-responsive-sm  w-100  ">
+                                    <table class=" tables-style table table-borderless " id="Branches-table">
+                                        <thead class="sticky-top">
+                                            <tr>
+                                               
+                                                <th scope="col">آخر خروج</th>
+                                                <th scope="col"> آخر تحديث </th>
+                                                <th scope="col"> الجوال</th>
+                                                <th scope="col"> المسمى الوظيفي</th>
+                                                <th scope="col" class="firstTable-col"> الموظف</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p>المدير العام</p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p>محسن عبدالحميد ناصر</p>
+                                                    <p> 401 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>1</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p> مدير الشئون الإدارية </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> سعود فايز وليد الربيعة  </p>
+                                                    <p> 402 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>2</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p>  مدير أسطول السيارات </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> إياد رضا أيمن يحيى </p>
+                                                    <p> 403 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>3</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p> مدير الشئون المالية </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> رشدي طاهر شريف رامي </p>
+                                                    <p> 404 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>4</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p>  محاسب   </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> مرسي مصطفى نبيل علي </p>
+                                                    <p> 405 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>5</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p> مشرف الفروع </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> طاهر مروان بلال شريف </p>
+                                                    <p> 406 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>6</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>24/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>17/08/2024</p>
+                                                </td>
+                                                <td>
+                                                    <p>966544051046</p>
+                                                </td>
+                                                <td>
+                                                    <p> موظف استقبال </p>
+                                                </td>
+                                                <td class="firstTable-col">
+                                                    <p> حسن هاني نبيل رجب </p>
+                                                    <p> 407 </p>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
+
+                                                        <div class="filters filter2-div"></div>
+
+                                                        <div>7</div>
+
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </form>
+                       
+                        <a href="../../../index.html" data-bs-toggle="tooltip" data-bs-placement="top"
+                            data-bs-custom-class="custom-tooltip" data-bs-title="العودة الي الرئيسية"
+                            class="new-Page-icon"><img src="../../../images/back to main.svg" alt="man"></a>
+                    </div>
+                </div>
+                <div class="col-auto sidebar2-col close2 close2">
+                    <nav class="sidebar2 close2">
+                        <div class="toggle-div toggle2">
+                            <span class="notification"> إشعارات </span>
+                        </div>
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <main>
+                                    <div class="accordion">
+
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> الشركة </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>عقود</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 3 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 5 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>مستندات</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 100 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 200 </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> السيارات </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>وثائق</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 3 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 5 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>صيانة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 100 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 200 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>اسعار</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 460 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 500 </p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> العقود </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row collapse-row">
+                                                            <div class="col ">
+                                                                <p> منتهية </p>
+                                                            </div>
+                                                            <div class="col contract-ended ">
+                                                                <p> 8 </p>
+                                                            </div>
+
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p>تنتهي اليوم</p>
+                                                            </div>
+
+                                                            <div class="col ended">
+                                                                <p> 15 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p>تنتهي غدًا</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 7 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p> تنتهي لاحقًا </p>
+                                                            </div>
+                                                            <div class="col later">
+                                                                <p> 11 </p>
+                                                            </div>
+
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>محفوظة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 5 </p>
+                                                            </div>
+
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>معلقة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 100 </p>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> الموظفين <div class="notify">
+                                                    </div></span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row align-items-center ">
+                                                            <div class="col-auto"> <img
+                                                                    src="../../../images/arrow icon.svg" /> </div>
+                                                            <div class="col-auto p-1"> <img
+                                                                    src="../../../images/arabic-man_21730-4132.avif"
+                                                                    class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                            </div>
+                                                            <div class="col-auto">37.068.12</div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row align-items-center mb-2">
+                                                            <div class="col-auto"> <img
+                                                                    src="../../../images/red arrow icon.svg" /></div>
+                                                            <div class="col-auto p-1"> <img
+                                                                    src="../../../images/arabic-man_21730-4132.avif"
+                                                                    class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                            </div>
+                                                            <div class="col-auto">37.068.12</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                            </div>
+
+
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../../scripts/Scripts.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var table = document.getElementById("Branches-table");
+            var rows = table.getElementsByTagName("tr");
+
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+
+                for (var j = 1; j < cells.length; j++) {
+                    cells[j].addEventListener("click", function () {
+                        window.location.href = "System Permissions.html";
+                    });
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

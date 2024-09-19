@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> نظام الادارة - صلاحيات النظام</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo:500,400,700" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../../../style/Layout.css">
+    <link rel="stylesheet" href="../../../style/content.css">
+    <!-- <link rel="stylesheet" href="../../../style/english.css"> -->
+
+</head>
+
+<body>
+    <div id="wrapper" class="Branches-wrapper d-flex flex-column ">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="nav-container container-fluid">
+                <!-- Company Logo -->
+                <div class="navbar-brand d-flex align-items-end gap-4">
+                    <a href="../../../index.html" class="Company-Logo"><img src="../../../images/kodi logo.png"
+                            alt="Company Logo" class="Company-Logo-img"></a>
+                    <p class="m-0 Company-name">شركة كدي لتأجير السيارات</p>
+                    <i class="fa-solid fa-bars toggle4 mobile-icon nav-icon"></i>
+                </div>
+
+
+                <!-- User Information -->
+                <div class="icons-content">
+                    <div class="d-flex">
+                        <div class="navbar-nav">
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex" href="#" id="userDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="ms-2  text-start">
+                                        <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
+                                        <p class="m-0">مشرف علي الفروع</p>
+                                    </div>
+                                    <img src="../../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                        alt="User Avatar" class="rounded-circle User-Avatar">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                     <li><a class="dropdown-item userDropdown-options" href="../../../Pages/Account/Account.html">حسابي <img
+                                                src="../../../images/Frame (2).svg" /></a></li>
+                                   <li><a class="dropdown-item userDropdown-options" href="../../../Pages/Account/NewPassword.html">تغيير كلمة السر <img
+                                                src="../../../images/Frame (1).svg" /></a></li>
+                                    <li><a class="dropdown-item userDropdown-options" href="#"> الأنظمه <img
+                                                src="../../../images/Frame (3).svg" /></a></li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item userDropdown-options " href="#">تسجيل الخروج <img
+                                                class="logout" src="../../../images/Frame (4).svg" /></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center" style="gap:15px">
+                        <!-- <img src="../../../images/Frame 2608795.svg" class=" sms nav-icon"
+                            style="width: 28;height: 28px;" />
+                        <img src="../../../images/whatsup.svg" class=" whatsup nav-icon" /> -->
+                        <h5 class="m-0 nav-icon">En</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+        <nav class="wornings navbar-expand-lg navbar-light py-2 ">
+            <p>الشركة موقوفة, تم تقليص بعض الخدمات </p>
+        </nav>
+        <div class="container-fluid h-100 main-container-fluid">
+            <div class="row h-100 flex-nowrap">
+                <div class="col-auto sidebar1-col close">
+                    <!-- Sidebar -->
+                    <nav class="sidebar close">
+                        <header>
+                            <i class='bx bx-chevron-right toggle'></i>
+                        </header>
+
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <ul class="menu-links">
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/comany .svg" class="icon"
+                                                data-bs-toggle="collapse" href="#company-items" aria-expanded="false"
+                                                aria-controls="#company-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#company-items" aria-expanded="false"
+                                                aria-controls="#company-items">الشركة </span>
+                                        </a>
+                                    </li>
+                                    <div id="company-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../company/Branches/Branches.html">
+                                                الفروع <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../company/owners/owners.html"> الملاك <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">العقود <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a href=" #">
+                                            <img src="../../../images/cars.svg" class="icon" />
+                                            <span class="text nav-text"> السيارات </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/tenants.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#tenant-items" aria-expanded="false"
+                                                aria-controls="#tenant-items"> المستأجرين </span>
+                                        </a>
+                                    </li>
+                                    <div id="tenant-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/employees.svg" class="icon"
+                                                data-bs-toggle="collapse" href="#employees-items" aria-expanded="false"
+                                                aria-controls="#employees-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#employees-items" aria-expanded="false"
+                                                aria-controls="#employees-items"> الموظفين </span>
+                                        </a>
+                                    </li>
+                                    <div id="employees-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item "
+                                                href="../../../Pages/employees/employees list/employees.html"> قائمة
+                                                الموظفين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item active"
+                                                href="../../../Pages/employees/System Permissions/employees.html">
+                                                صلاحيات النظام <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item"
+                                                href="../../../pages/employees/Contract Permissions/employees.html">صلاحيات
+                                                العقد <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a href="#">
+                                            <img src="../../../images/accounts.svg" class="icon" />
+                                            <span class="text nav-text"> الحسابات </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/reports.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#reports-items" aria-expanded="false"
+                                                aria-controls="#reports-items">التقارير </span>
+                                        </a>
+                                    </li>
+                                    <div id="reports-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/statics.svg" class="icon" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#statics-items" aria-expanded="false"
+                                                aria-controls="#statics-items"> الإحصائيات </span>
+                                        </a>
+                                    </li>
+                                    <div id="statics-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+
+
+                                        </div>
+                                    </div>
+                                    <li class="nav-link">
+                                        <a>
+                                            <img src="../../../images/services.svg" class="icon"
+                                                data-bs-toggle="collapse" href="#services-items" aria-expanded="false"
+                                                aria-controls="#services-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                                href="#services-items" aria-expanded="false"
+                                                aria-controls="#services-items">الخدمات</span>
+                                        </a>
+                                    </li>
+                                    <div id="services-items" class="collapse">
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="../../../Pages/Services/banks/Banks.html"> البنوك <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item"
+                                                href="../../../Pages/Services/sellingPoints/sellingPoints.html"> نقاط البيع <i
+                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item"
+                                                href="../../../Pages/Services/techncal-connect/techncal-connect.html"> الربط
+                                                التقني <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                            <a class="collapse-item" href="../../../Pages/Services/drivers/drivers.html">
+                                                السائقين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                            <a class="collapse-item" href="../../../Pages/Services/Alerts/Alerts.html"> التنبيهات
+                                                <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/Services/Membership/Membership.html">
+                                                العضويات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col my-2 d-flex align-items-center justify-content-center">
+                    <div class="container NewUpdate-container">
+                        <form action="" class="needs-validation" novalidate>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-9">
+                                    <div class="row g-3 my-2">
+                                        <div class="col-md-6">
+                                            <h3>صلاحيات النظام</h3>
+                                        </div>
+                                        <div class="col-md-6 save-col">
+
+                                            <button type="submit" class="custom-img-btn"> <img
+                                                    src="../../../images/save.svg" /></button>
+                                            <a href="employees.html"><img
+                                                    src="../../../images/Chevron_Left.svg" /></a>
+                                        </div>
+                                    </div>
+                                    <main class="mt-4 g-3">
+                                        <h5 class="subtitle"> محسن عبدالحميد ناصر </h5>
+
+                                        <div class="accordion inputs-accordion">
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title"> الشركة
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Branches" name="Branches">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Branches">
+                                                                            الفروع
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto " id="BranchesOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-add"
+                                                                                name="Branches-add">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-edit"
+                                                                                name="Branches-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-stop"
+                                                                                name="Branches-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-operate"
+                                                                                name="Branches-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-delet"
+                                                                                name="Branches-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Branches-Back"
+                                                                                name="Branches-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="Branches-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row my-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Owners" name="Owners">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Owners">
+                                                                            الملاك
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="OwnersOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-add" name="Owners-add">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-edit" name="Owners-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-stop" name="Owners-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-operate"
+                                                                                name="Owners-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-delet"
+                                                                                name="Owners-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Owners-Back" name="Owners-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="Owners-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Contracts" name="Contracts">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Contracts">
+                                                                            العقود
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="ContractsOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Contracts-edit"
+                                                                                name="Contracts-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Contracts-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Contracts-delet"
+                                                                                name="Contracts-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Contracts-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">السيارات
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="CarData" name="CarData">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="CarData">
+                                                                            بيانات السيارات
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="CarDataOPtions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-add" name="CarData-add">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-edit"
+                                                                                name="CarData-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-stop"
+                                                                                name="CarData-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-operate"
+                                                                                name="CarData-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-delet"
+                                                                                name="CarData-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarData-Back"
+                                                                                name="CarData-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="CarData-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row my-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="CarPrices" name="CarPrices">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="CarPrices">
+                                                                            الأسعار
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="CarPricesOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarPrices-add"
+                                                                                name="CarPrices-add">
+                                                                            <label class="form-check-label"
+                                                                                for="CarPrices-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarPrices-delet"
+                                                                                name="CarPrices-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="CarPrices-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="maintenance" name="maintenance">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="maintenance">
+                                                                            الصيانة
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="maintenanceOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="maintenance-edit"
+                                                                                name="maintenance-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="maintenance-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="maintenance-delet"
+                                                                                name="maintenance-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="maintenance-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="CarRepair" name="CarRepair">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="CarRepair">
+                                                                            تصليح السيارات
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="CarRepairOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="CarRepair-edit"
+                                                                                name="CarRepair-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="CarRepair-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="CarTransfer" name="CarTransfer">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="CarTransfer">
+                                                                            نقل السيارة
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="OwnerChange" name="OwnerChange">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="OwnerChange">
+                                                                            تغيير المالك
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">المستأجرين
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row ">
+                                                                <div class="col-lg-auto col-xl-3 ">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"type="checkbox" value="checked" id="tenant-data" name="tenant-data">
+                                                                        <label class="form-check-label main-checkbox" for="tenant-data">بيانات المستأجرين
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="tenant-dataOptions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="tenant-data-edit"
+                                                                                name="tenant-data-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="tenant-data-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row my-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="tenant-contracts"
+                                                                            name="tenant-contracts">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="tenant-contracts">
+                                                                            عقود المستأجرين
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="tenants-balances"
+                                                                            name="tenants-balances">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="tenants-balances">
+                                                                            أرصدة المستأجرين
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">الحسابات
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row my-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Feeding" name="Feeding">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Feeding">
+                                                                            تغذية الصندوق
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Receive-pledge"
+                                                                            name="Receive-pledge">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Receive-pledge">
+                                                                            إستلام العهدة
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="amounts-to-tenant"
+                                                                            name="amounts-to-tenant">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="amounts-to-tenant">
+                                                                            مبالغ إلى مستأجر
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="amounts-from-tenant"
+                                                                            name="amounts-from-tenant">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="amounts-from-tenant">
+                                                                            مبالغ من مستأجر
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row mb-3 ">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Tax-calculation"
+                                                                            name="Tax-calculation">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Tax-calculation">
+                                                                            حساب الإقرار الضريبي
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-auto"
+                                                                    id="Tax-calculation-OPtions"
+                                                                    style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Tax-calculation-add"
+                                                                                name="Tax-calculation-add">
+                                                                            <label class="form-check-label"
+                                                                                for="Tax-calculation-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Tax-calculation-delet"
+                                                                                name="Tax-calculation-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Tax-calculation-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">التقارير
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">الخدمات
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Banks" name="Banks">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Banks">
+                                                                            البنوك
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="BanksOptions" style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-add" name="Banks-add">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-edit" name="Banks-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-stop" name="Banks-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-operate"
+                                                                                name="Banks-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-delet" name="Banks-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Banks-Back" name="Banks-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="Banks-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row my-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="SalePoints" name="SalePoints">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="SalePoints">
+                                                                            نقاط البيع
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="SalePointsOptions" style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-add"
+                                                                                name="SalePoints-add">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-edit"
+                                                                                name="SalePoints-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-stop"
+                                                                                name="SalePoints-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-operate"
+                                                                                name="SalePoints-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-delet"
+                                                                                name="SalePoints-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="SalePoints-Back"
+                                                                                name="SalePoints-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="SalePoints-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="techncal-connect"
+                                                                            name="techncal-connect">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="techncal-connect">
+                                                                            الربط التقني
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="techncal-connectOptions" style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="techncal-connect-edit"
+                                                                                name="techncal-connect-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="techncal-connect-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row my-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Drivers" name="Drivers">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Drivers">
+                                                                            السائقين
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="DriversOptions" style="display: none;">
+                                                                    <div class="row">
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-add" name="Drivers-add">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-add">
+                                                                                إضافة
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-edit"
+                                                                                name="Drivers-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-stop"
+                                                                                name="Drivers-stop">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-stop">
+                                                                                إيقاف
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-operate"
+                                                                                name="Drivers-operate">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-operate">
+                                                                                تفعيل
+                                                                            </label>
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-delet"
+                                                                                name="Drivers-delet">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-delet">
+                                                                                حذف
+                                                                            </label>
+
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Drivers-Back"
+                                                                                name="Drivers-Back">
+                                                                            <label class="form-check-label"
+                                                                                for="Drivers-Back">
+                                                                                إرجاع
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Alerts" name="Alerts">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Alerts">
+                                                                            التنبيهات
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="AlertsOptions" style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Alerts-edit" name="Alerts-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Alerts-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                            <div class="row my-3">
+                                                                <div class="col-lg-auto col-xl-3">
+                                                                    <div class="d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id="Membership" name="Membership">
+                                                                        <label
+                                                                            class="form-check-label main-checkbox"
+                                                                            for="Membership">
+                                                                            العضويات
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-auto" id="MembershipOptions" style="display: none;">
+                                                                    <div class="row">
+
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id="Membership-edit"
+                                                                                name="Membership-edit">
+                                                                            <label class="form-check-label"
+                                                                                for="Membership-edit">
+                                                                                تعديل
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" inputs-accordion-item">
+                                                <div class=" inputs-accordion-item-header">
+                                                    <span class="accordion-item-header-title">الإحصائيات
+                                                    </span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        viewBox="0 0 24 24" fill="none" stroke="#666666"
+                                                        stroke-width="3" stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                        <path d="m6 9 6 6 6-6" />
+                                                    </svg>
+                                                </div>
+                                                <div class="accordion-item-description-wrapper">
+
+                                                    <div class="accordion-item-description">
+                                                        <hr class="accordion-items-hr">
+
+                                                        <div class="container-fluid">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </main>
+
+                                </div>
+                            </div>
+                        </form>
+  
+                </div>
+            </div>
+        
+    
+    <div class="col-auto sidebar2-col close2">
+        <nav class="sidebar2 close2">
+            <div class="toggle-div toggle2">
+                <span class="notification"> إشعارات </span>
+            </div>
+            <div class="menu-bar">
+                <div class="menu">
+                    <main>
+                        <div class="accordion">
+
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span class="accordion-item-header-title"> الشركة </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-item-description-wrapper">
+                                    <div class="accordion-item-description">
+                                        <div class="container-fluid">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>عقود</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 3 </p>
+                                                </div>
+                                                <div class="col ended">
+                                                    <p> 5 </p>
+                                                </div>
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>مستندات</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 100 </p>
+                                                </div>
+                                                <div class="col ended">
+                                                    <p> 200 </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span class="accordion-item-header-title"> السيارات </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-item-description-wrapper">
+                                    <div class="accordion-item-description">
+                                        <div class="container-fluid">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>وثائق</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 3 </p>
+                                                </div>
+                                                <div class="col ended">
+                                                    <p> 5 </p>
+                                                </div>
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>صيانة</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 100 </p>
+                                                </div>
+                                                <div class="col ended">
+                                                    <p> 200 </p>
+                                                </div>
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>اسعار</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 460 </p>
+                                                </div>
+                                                <div class="col ended">
+                                                    <p> 500 </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span class="accordion-item-header-title"> العقود </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-item-description-wrapper">
+                                    <div class="accordion-item-description">
+                                        <div class="container-fluid">
+                                            <div class="row collapse-row">
+                                                <div class="col ">
+                                                    <p> منتهية </p>
+                                                </div>
+                                                <div class="col contract-ended ">
+                                                    <p> 8 </p>
+                                                </div>
+
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col">
+                                                    <p>تنتهي اليوم</p>
+                                                </div>
+
+                                                <div class="col ended">
+                                                    <p> 15 </p>
+                                                </div>
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col">
+                                                    <p>تنتهي غدًا</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 7 </p>
+                                                </div>
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col">
+                                                    <p> تنتهي لاحقًا </p>
+                                                </div>
+                                                <div class="col later">
+                                                    <p> 11 </p>
+                                                </div>
+
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>محفوظة</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 5 </p>
+                                                </div>
+
+                                            </div>
+                                            <hr class="collapse-hr">
+                                            <div class="row collapse-row">
+                                                <div class="col-5">
+                                                    <p>معلقة</p>
+                                                </div>
+                                                <div class="col working">
+                                                    <p> 100 </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    <span class="accordion-item-header-title"> الموظفين <div class="notify"></div>
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-chevron-down accordion-item-header-icon">
+                                        <path d="m6 9 6 6 6-6" />
+                                    </svg>
+                                </div>
+                                <div class="accordion-item-description-wrapper">
+                                    <div class="accordion-item-description">
+                                        <div class="container-fluid">
+                                            <div class="row align-items-center ">
+                                                <div class="col-auto"> <img src="../../../images/arrow icon.svg" />
+                                                </div>
+                                                <div class="col-auto p-1"> <img
+                                                        src="../../../images/arabic-man_21730-4132.avif"
+                                                        class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                </div>
+                                                <div class="col-auto">37.068.12</div>
+                                            </div>
+                                            <hr>
+                                            <div class="row align-items-center mb-2">
+                                                <div class="col-auto"> <img src="../../../images/red arrow icon.svg" />
+                                                </div>
+                                                <div class="col-auto p-1"> <img
+                                                        src="../../../images/arabic-man_21730-4132.avif"
+                                                        class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                </div>
+                                                <div class="col-auto">37.068.12</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+
+
+            </div>
+
+        </nav>
+
+    </div>
+           </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../../scripts/Scripts.js"></script>
+    <!-- local scripts  -->
+    <script>
+        let array = [
+            {
+                mainCheckbox: document.getElementById("Branches"),
+                optionsCheckbox: document.getElementById("BranchesOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("Owners"),
+                optionsCheckbox: document.getElementById("OwnersOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("Contracts"),
+                optionsCheckbox: document.getElementById("ContractsOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("CarData"),
+                optionsCheckbox: document.getElementById("CarDataOPtions")
+            },
+            {
+                mainCheckbox: document.getElementById("CarPrices"),
+                optionsCheckbox: document.getElementById("CarPricesOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("maintenance"),
+                optionsCheckbox: document.getElementById("maintenanceOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("CarRepair"),
+                optionsCheckbox: document.getElementById("CarRepairOptions")
+            },
+            {
+                mainCheckbox: document.getElementById("tenant-data"),
+                optionsCheckbox: document.getElementById('tenant-dataOptions')
+            },
+            {
+                mainCheckbox: document.getElementById("Tax-calculation"),
+                optionsCheckbox: document.getElementById('Tax-calculation-OPtions')
+            },
+            {
+                mainCheckbox: document.getElementById("Banks"),
+                optionsCheckbox: document.getElementById('BanksOptions')
+            }
+            ,
+            {
+                mainCheckbox: document.getElementById("SalePoints"),
+                optionsCheckbox: document.getElementById('SalePointsOptions')
+            },
+            {
+                mainCheckbox: document.getElementById("techncal-connect"),
+                optionsCheckbox: document.getElementById('techncal-connectOptions')
+            },
+            {
+                mainCheckbox: document.getElementById("Drivers"),
+                optionsCheckbox: document.getElementById('DriversOptions')
+            }
+            ,
+            {
+                mainCheckbox: document.getElementById("Alerts"),
+                optionsCheckbox: document.getElementById('AlertsOptions')
+            }
+            ,
+            {
+                mainCheckbox: document.getElementById("Membership"),
+                optionsCheckbox: document.getElementById('MembershipOptions')
+            }
+        ]
+        array.forEach(index => {
+            index.mainCheckbox.addEventListener('change', function () {
+                const isChecked = this.checked
+                index.optionsCheckbox.style.display = isChecked ? 'block' : 'none'
+            })
+        })
+    </script>
+
+</body>
+
+</html>
