@@ -124,6 +124,16 @@
                                                                     <div class="col-md-12">
                                                                         <div class="row">
                                                                             <div class="col-auto">
+                                                                                <p> الهوية </p>
+                                                                            </div>
+                                                                            <div class=" col-md-auto Saved-data">
+                                                                                <p> 6548816823054  </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="row">
+                                                                            <div class="col-auto">
                                                                                 <p> الحد الإئتماني للعهدة </p>
                                                                             </div>
                                                                             <div class=" col-md-auto Saved-data">
@@ -141,12 +151,12 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6">
+                                                                    <div class="col-md-12">
                                                                         <div class="row">
                                                                          <div class="col-md-auto">
                                                                             <label for="email" class="form-label"> البريد الإلكتروني </label>
                                                                          </div>
-                                                                            <div class="col-md-8">
+                                                                            <div class="col-md-6">
                                                                                 <input type="email" id="email"
                                                                                 class="form-control inputs english-input"
                                                                                 name="email" required>
@@ -174,7 +184,7 @@
                                                                          <div class="col-md-auto">
                                                                             <label for="Password-hint" class="form-label"> تلميح كلمة السر  </label>
                                                                          </div>
-                                                                            <div class="col-md-2">
+                                                                            <div class="col-md-4">
                                                                                 <input type="text" id="Password-hint"
                                                                                 class="form-control inputs text-center"
                                                                                 name="Password-hint" required>
@@ -190,8 +200,8 @@
                                                                             <div class="col-md-2">
                                                                                 <div class="number-input-container Documents-days-input ">
                                                                                     <div class="col">
-                                                                                        <input type="number" value="10"
-                                                                                            min="10" max="90"
+                                                                                        <input type="number" value="5"
+                                                                                            min="5" max="15"
                                                                                             class="alert-input"
                                                                                             name="automatic-logout"
                                                                                             id="automatic-logout"
@@ -199,7 +209,9 @@
                                                                                     </div>
                                                                                     <div
                                                                                         class="col d-flex flex-column-reverse">
-                                                                                        <button type="button" class="deincrement"></button>
+                                                                                        <button type="button" class="deincrement">
+                                                                                           
+                                                                                        </button>
                                                                                         <button type="button" class="increment"></button>
                                                                                     </div>
                                                                                 </div>
@@ -214,7 +226,7 @@
                                                                             <div class="col-md-auto">
                                                                                 <label for="lang">اللغة الافتراضية</label>
                                                                             </div>
-                                                                            <div class="col-md-8  ">
+                                                                            <div class="col-md-6  ">
                                                                                 <select class="form-select select-style text-center"name="language" id="lang">
                                                                                     <option value="Arabic">
                                                                                         العربية
@@ -364,57 +376,50 @@
    
 </script>
 <script>
-        let deincrement = document.querySelector(".deincrement");
-        let increment = document.querySelector(".increment");
-        let number = document.querySelector(".alert-input");
+    let deincrement = document.querySelector(".deincrement");
+    let increment = document.querySelector(".increment");
+    let number = document.querySelector(".alert-input");
 
-        let step = 10;
-        let max = 90;
-        let min = 10;
-
-        number.addEventListener('input', () => {
-
-        });
-
-        number.addEventListener('blur', () => {
-            let currentValue = parseInt(number.value);
-            if (isNaN(currentValue)) {
-                number.value = min;
-            } else if (currentValue > max) {
-                number.value = max;
-            } else if (currentValue < min) {
-                number.value = min;
-            }
-
-        });
-        increment.addEventListener("click", () => {
-            if (parseInt(number.value) + step >= max) {
-                number.value = max;
-                increment.style.backgroundImage = "url('../../../images/up1.svg')";
-                deincrement.style.backgroundImage = "url('../../../images/down.svg')";
-
-                return;
-            }
-            increment.style.backgroundImage = "url('../../../images/up.svg')";
-            deincrement.style.backgroundImage = "url('../../../images/down.svg')";
-            number.value = parseInt(number.value) + step;
-        });
-
-        deincrement.addEventListener("click", () => {
-            if (parseInt(number.value) - step <= min) {
-                number.value = min;
-                deincrement.style.backgroundImage = "url('../../../images/down1.svg')";
-                increment.style.backgroundImage = "url('../../../images/up.svg')";
-
-                return;
-            }
-            deincrement.style.backgroundImage = "url('../../../images/down.svg')";
-            increment.style.backgroundImage = "url('../../../images/up.svg')";
-
-            number.value = parseInt(number.value) - step;
+    let step = 5;
+    let max = 15;
+    let min = 5;
+    
+    number.addEventListener('blur', () => {
+        let currentValue = parseInt(number.value);
+        if (isNaN(currentValue)) {
+            number.value = min;
+        } else if (currentValue > max) {
+            number.value = max;
+        } else if (currentValue < min) {
+            number.value = min;
+        }
     });
 
+    increment.addEventListener("click", () => {
+        if (parseInt(number.value) + step >= max) {
+            number.value = max;
+            increment.style.backgroundImage = "url('../../images/up1.svg')";
+            deincrement.style.backgroundImage = "url('../../images/down.svg')";
+            return;
+        }
+        increment.style.backgroundImage = "url('../../images/up.svg')";
+        deincrement.style.backgroundImage = "url('../../images/down.svg')";
+        number.value = parseInt(number.value) + step;
+    });
+
+    deincrement.addEventListener("click", () => {
+        if (parseInt(number.value) - step <= min) {
+            number.value = min;
+            deincrement.style.backgroundImage = "url('../../images/down1.svg')";
+            increment.style.backgroundImage = "url('../../images/up.svg')";
+            return;
+        }
+        deincrement.style.backgroundImage = "url('../../images/down.svg')";
+        increment.style.backgroundImage = "url('../../images/up.svg')";
+        number.value = parseInt(number.value) - step;
+    });
 </script>
+
 
 </body>
 
