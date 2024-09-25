@@ -680,12 +680,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: -60px;
 }
 
-.new-Page-icon img {
+/* .new-Page-icon img {
   width: 100%;
-}
+} */
 
 .main-page-icon {
-  position: sticky;
+  position: absolute;
   left: -120px;
   bottom: 0;
   transition: left 0.3s ease, bottom 0.3s ease;
@@ -1352,12 +1352,17 @@ text-align: end;
 }
 @media (max-width : 1024px) {
   .new-Page-icon {
-    left: 60px;
-    bottom: 0px;
+    position: sticky;
+    right: 100%;
+    bottom: 90px;
+    z-index: 9;
 }
 .main-page-icon {
-bottom: 40px;
-right: 100%;
+  position: sticky;
+  left: 0px;
+  bottom: 40px;
+  right: 100%;
+  z-index: 9;
 }
 .main-container {
   position: static;
