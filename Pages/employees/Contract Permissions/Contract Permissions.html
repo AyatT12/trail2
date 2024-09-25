@@ -172,6 +172,18 @@
                                     </li>
                                     <div id="reports-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="../../../Pages/reports/Administrative procedures.html">  الإجراءات الإدارية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/DailyReports.html"> اليومية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Existing contracts.html"> العقود القائمة    <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item " href="../../../Pages/reports/Saved contracts.html"> العقود المحفوظة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Pending contracts.html"> العقود المعلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -562,20 +574,7 @@
 
                                                         <div class="container-fluid">
                                                             <div class="row">
-                                                                <div class="col-12">
-                                                                    <div class="d-flex gap-3 align-items-center">
-                                                                        <input class="form-check-input checkbox"
-                                                                            type="checkbox" value="checked"
-                                                                            id="1" name="1">
-                                                                        <label
-                                                                            class="form-check-label main-checkbox"
-                                                                            for="1">
-                                                                            التجاوز عن صلاحيات الهوية
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                
-
+                                                            
 
                                                             </div>
                                                             <div class="row my-3">
@@ -587,7 +586,7 @@
                                                                         <label
                                                                             class="form-check-label main-checkbox"
                                                                             for="2">
-                                                                            التجاوز عن صلاحيات رخصة القيادة
+                                                                            تجاوز  رخصة القيادة
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -603,7 +602,7 @@
                                                                         <label
                                                                             class="form-check-label main-checkbox"
                                                                             for="3">
-                                                                            التجاوز عن عدم وجود بريد وطني
+                                                                            تجاوز العنوان
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -620,7 +619,7 @@
                                                                         <label
                                                                             class="form-check-label main-checkbox"
                                                                             for="4">
-                                                                            التجاوز عن عدم وجود جهة عمل
+                                                                            تجاوز  جهة العمل
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -634,7 +633,7 @@
                                                                         <label
                                                                             class="form-check-label main-checkbox"
                                                                             for="5">
-                                                                            التجاوز عن عمر السائق
+                                                                            تجاوز  عمر السائق
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -704,7 +703,7 @@
                                                                         <label
                                                                             class="form-check-label main-checkbox"
                                                                             for="ContractCancel">
-                                                                            إلغاء عقد
+                                                                            تسوية عقد
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -733,7 +732,7 @@
                                                                  نسبة الخصم
                                                                 </div>
                                                                 <div class="col-md-auto">
-                                                                 <input class="form-control inputs text-center" type="text" name="Discount-amount">
+                                                                 <input class="form-control inputs text-center number-input" type="number" name="Discount-amount" max="100">
  
                                                                 </div>
                                                              </div>
@@ -743,7 +742,7 @@
                                                                     الكيلوات المجانية 
                                                                 </div>
                                                                 <div class="col-md-auto">
-                                                                 <input class="form-control inputs text-center" type="text" name="free-kilos">
+                                                                 <input class="form-control inputs text-center number-input" type="number" name="free-kilos" max="500">
  
                                                                 </div>
                                                              </div>
@@ -752,7 +751,7 @@
                                                                     الساعات المجانية
                                                                 </div>
                                                                 <div class="col-md-auto">
-                                                                 <input class="form-control inputs text-center" type="text" name="free-hours">
+                                                                 <input class="form-control inputs text-center number-input" type="number" name="free-hours" max="9">
  
                                                                 </div>
                                                              </div>
@@ -1013,6 +1012,20 @@
             <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
             <script src="../../../scripts/Scripts.js"></script>
             <!-- local scripts  -->
+            <script>
+                const inputs = document.querySelectorAll('.number-input');
+                
+                inputs.forEach(input => {
+                  input.addEventListener('input', function () {
+                    const max = parseInt(input.getAttribute('max'));
+                    
+                    if (parseInt(input.value) > max) {
+                      input.value = max;  
+                    }
+                  });
+                });
+              </script>
+              
 
 </body>
 

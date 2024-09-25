@@ -172,6 +172,18 @@
                                     </li>
                                     <div id="reports-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="../../../Pages/reports/Administrative procedures.html">  الإجراءات الإدارية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/DailyReports.html"> اليومية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Existing contracts.html"> العقود القائمة    <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item " href="../../../Pages/reports/Saved contracts.html"> العقود المحفوظة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Pending contracts.html"> العقود المعلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -760,17 +772,7 @@
                                                                 <div class="col-md-auto " id="documentationOptions"
                                                                     style="display: none;">
                                                                     <div class="row">
-                                                                        <div
-                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
-                                                                            <input class="form-check-input checkbox"
-                                                                                type="checkbox" value="checked"
-                                                                                id="documentation-add"
-                                                                                name="documentation-add">
-                                                                            <label class="form-check-label"
-                                                                                for="documentation-add">
-                                                                                إضافة
-                                                                            </label>
-                                                                        </div>
+                                                                       
                                                                         <div
                                                                             class="col-6 col-md-auto d-flex gap-3 align-items-center">
                                                                             <input class="form-check-input checkbox"
@@ -853,7 +855,7 @@
 
 
                                                             </div>
-                                                            <div class="row mb-3 ">
+                                                            <div class="row mb-3">
                                                                 <div class="col-lg-auto col-xl-3">
                                                                     <div class="d-flex gap-3 align-items-center">
                                                                         <input class="form-check-input checkbox"
@@ -866,8 +868,53 @@
                                                                         </label>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-md-auto" id="Sale-proceduresOptions"
+                                                                   style="display: none;" >
+                                                                    <div class="row">
 
-</div>
+                                                                        <div
+                                                                            class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                            <input class="form-check-input checkbox"
+                                                                                type="checkbox" value="checked"
+                                                                                id=" ShowCar"
+                                                                                name=" ShowCar">
+                                                                            <label class="form-check-label"
+                                                                                for=" ShowCar">
+                                                                                عرض السيارة للبيع 
+                                                                            </label>
+                                                                        </div>
+
+                                                                        <div
+                                                                        class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                        <input class="form-check-input checkbox"
+                                                                            type="checkbox" value="checked"
+                                                                            id=" Cancellation "
+                                                                            name=" Cancellation ">
+                                                                        <label class="form-check-label"
+                                                                            for=" Cancellation ">
+                                                                           إلغاء العرض
+                                                                        </label>
+                                                                       </div>
+                                                                       <div
+                                                                       class="col-6 col-md-auto d-flex gap-3 align-items-center">
+                                                                       <input class="form-check-input checkbox"
+                                                                           type="checkbox" value="checked"
+                                                                           id="ExecuteSale"
+                                                                           name="ExecuteSale">
+                                                                       <label class="form-check-label"
+                                                                           for="ExecuteSale">
+                                                                          تنفيذ البيع
+                                                                       </label>
+                                                                   </div>
+
+
+
+
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
                                                             <div class="row mb-3 ">
                                                                 <div class="col-lg-auto col-xl-3">
                                                                     <div class="d-flex gap-3 align-items-center">
@@ -1859,6 +1906,10 @@
             {
                 mainCheckbox: document.getElementById("documentation"),
                 optionsCheckbox: document.getElementById('documentationOptions')  
+            },
+            {
+                mainCheckbox: document.getElementById("Sale-procedures"),
+                optionsCheckbox: document.getElementById('Sale-proceduresOptions')  
             }
         ]
         array.forEach(index => {

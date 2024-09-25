@@ -157,9 +157,21 @@
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items">التقارير </span>
                                         </a>
                                     </li>
-                                    <div id="reports-items" class="collapse" >
+                                    <div id="reports-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
-                                        
+                                            <a class="collapse-item" href="../../../Pages/reports/Administrative procedures.html">  الإجراءات الإدارية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/DailyReports.html"> اليومية  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Existing contracts.html"> العقود القائمة    <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item " href="../../../Pages/reports/Saved contracts.html"> العقود المحفوظة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Pending contracts.html"> العقود المعلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
                                         </div>
                                     </div>
                                     <li class="nav-link">
@@ -222,14 +234,15 @@
                                                 <h3> تحديث بيانات الموظف </h3>
                                             </div>
                                             <div class="col-md-6 save-col">
-                                                <button type="submit" class="custom-img-btn"> <img
+                                                <button type="button" class="custom-img-btn"> <img
                                                     src="../../../images/Frame (5).svg" /></button>
                                                 <button type="submit" class="custom-img-btn"> <img
                                                         src="../../../images/save.svg" /></button>
-                                                <button type="button" class="custom-img-btn"> <img
+                                                <button type="button" class="custom-img-btn" id="stop-active-button">  <img id="stop-active-icon"
                                                         src="../../../images/stop.svg" /></button>
-                                                <button type="button" class="custom-img-btn"> <img
+                                                <button type="button" class="custom-img-btn" id="delete-recycle-button"> <img id="delete-recycle-icon"
                                                         src="../../../images/delete (2).svg" /></button>
+                                                      
                                                 <a href="employees.html"><img src="../../../images/Chevron_Left.svg" /></a>
                                             </div>
                                         </div>
@@ -307,25 +320,14 @@
                                                            
                                                              
                                                                 <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <label for="email" class="form-label"> البريد
-                                                                            الإلكتروني </label>
-                                                                        <input type="email" id="email"
-                                                                            class="form-control inputs english-input"
-                                                                            name="email" required>
-                                                                        <div class="invaild">
-                                                                            <div class="invalid-feedback">
-                                                                                الحقل مطلوب
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+
                                                                     <div class="col-md-6">
                                                                         <label for="phone2" class="form-label"> الجوال
                                                                         </label>
                                                                         <div class="input-group has-validation">
                                                                             <input type="tel"
                                                                                 class="form-control inputs tel-input"
-                                                                                id="phone2" name="phone2" required>
+                                                                                id="phone2" name="phone2" >
                                                                             <select
                                                                                 class="input-group-text select-style counterCode"
                                                                                 name="counterCode-phone2">
@@ -342,7 +344,20 @@
 
 
                                                                     </div>
-
+ 
+                                                                    <div class="col-md-6">
+                                                                        <label for="email" class="form-label"> البريد
+                                                                            الإلكتروني </label>
+                                                                        <input type="email" id="email"
+                                                                            class="form-control inputs english-input"
+                                                                            name="email" >
+                                                                        <div class="invaild">
+                                                                            <div class="invalid-feedback">
+                                                                                الحقل مطلوب
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
 
                                                                 </div>
                                                                 <div class="row align-items-center ">
@@ -394,7 +409,7 @@
                                                                             class="form-label">  الحد اليومي  </label>
                                                                         <input type="number" id="Daily-limit"
                                                                             class="form-control inputs"
-                                                                            name="Daily-limit" maxlength="100"  required>
+                                                                            name="Daily-limit" max="30"  min="5" required>
                                                                         <div class="invaild">
                                                                             <div class="invalid-feedback">
                                                                                 الحقل مطلوب
@@ -728,7 +743,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../../scripts/Scripts.js"></script>
-   
+   <!-- local script -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
@@ -738,18 +753,22 @@
                 "phone2": "0987654321",
                 "email": "ABC@gmail.com",
                 "notes": 'ملاحظات الفرع',
-                "Creditlimit": '7000.000'
+                "Creditlimit": '7000.000',
+                "Dailylimit" : "5"
             };
             document.getElementById("Creditlimit").value = data.Creditlimit;
             document.getElementById("JobTitle-en").value = data.JobTitleEN;
             document.getElementById("JobTitle-ar").value = data.JobTitleAR;
             document.getElementById("phone2").value = data.phone2;
             document.getElementById("email").value = data.email;
+            document.getElementById("Daily-limit").value = data.Dailylimit;
             document.querySelector('textarea[name="notes"]').value = data.notes;
 
         });
        
     </script>
+       <!-- local script -->
+
    <script>
     document.addEventListener("DOMContentLoaded", function() {
         const BranchesAuthority = document.getElementById('BranchesAuthority');
@@ -760,8 +779,66 @@
         });
     });
 </script>
+   <!-- local script -->
+   <script>
+     const input = document.getElementById('Daily-limit');
+     
+     input.addEventListener('input', function () {
+       const max = parseInt(input.getAttribute('max'));
+       
+       if (parseInt(input.value) > max) {
+         input.value = max; 
+       }else if (parseInt(input.value) < min) {
+        input.value = min; 
 
+       }
+     });
+   </script>
+   <!-- delete , Recycle icon  -->
+    <script>
+        const deleteRecycleButton = document.getElementById("delete-recycle-button");
+        const deleteRecycleIcon = document.getElementById("delete-recycle-icon");
+        
+        let isDeleted = false;
+        let isRecycled = true;
+
+        updateIcon();
+
+        deleteRecycleButton.addEventListener("click", () => {
+            isDeleted = !isDeleted; 
+            isRecycled = !isRecycled; 
+            updateIcon();
+        });
+
+        function updateIcon() {
+            deleteRecycleIcon.src = isDeleted 
+                ? "../../../images/Property 1=recycle.svg" 
+                : "../../../images/delete (2).svg";
+        }
+    </script>
+   <!-- stop , active icon  -->
+
+   <script>
+    const StopActiveButton = document.getElementById("stop-active-button");
+    const StopActiveIcon = document.getElementById("stop-active-icon");
     
+    let isStoped = false;
+    let isActive = true;
+
+    updateIcon2();
+
+    StopActiveButton.addEventListener("click", () => {
+        isStoped = !isStoped; 
+        isActive = !isActive; 
+        updateIcon2();
+    });
+
+    function updateIcon2() {
+        StopActiveIcon.src = isStoped 
+            ? "../../../images/Property 1=active.svg" 
+            : "../../../images/stop.svg";
+    }
+</script>
 </body>
 
 </html>

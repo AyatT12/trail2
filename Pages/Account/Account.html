@@ -110,7 +110,7 @@
                                                             </div>
                                                             <div class="data-card">
                                                                <div class="container-fluid">
-                                                                <div class="row py-3">
+                                                                <div class="row g-3 py-3">
                                                                     <div class="col-md-12">
                                                                         <div class="row">
                                                                             <div class="col-auto">
@@ -134,7 +134,7 @@
                                                                     <div class="col-md-12">
                                                                         <div class="row">
                                                                             <div class="col-auto">
-                                                                                <p> الحد الإئتماني للعهدة </p>
+                                                                                <p> الحد الإئتماني  </p>
                                                                             </div>
                                                                             <div class=" col-md-auto Saved-data">
                                                                                 <p> 1.000.000.00  </p>
@@ -143,11 +143,24 @@
                                                                     </div>
                                                                     <div class="col-md-12">
                                                                         <div class="row">
-                                                                            <div class="col-auto">
-                                                                                <p> الجوال </p>
+                                                                            <div class="col-md-auto">
+                                                                                <label for="phone" class="form-label"> الجوال </label>
                                                                             </div>
-                                                                            <div class=" col-md-auto Saved-data">
-                                                                                <p> 96654387921672+  </p>
+                                                                            <div class="col-md-4">
+                                                                                <div class="input-group">
+                                                                                    <input type="tel"
+                                                                                        class="form-control inputs tel-input"
+                                                                                        id="phone" name="phone" required>
+                                                                                    <select
+                                                                                        class="input-group-text select-style counterCode"
+                                                                                        name="counterCode-phone">
+                                                                                        <option value="+966">+966</option>
+                                                                                        <option value="+962">+962</option>
+                                                                                        <option value="+20">+20</option>
+                                                                                    </select>
+                                                                                   
+                                                                                </div>
+                                                                              
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -159,12 +172,8 @@
                                                                             <div class="col-md-6">
                                                                                 <input type="email" id="email"
                                                                                 class="form-control inputs english-input"
-                                                                                name="email" required>
-                                                                            <div class="invaild">
-                                                                                <div class="invalid-feedback">
-                                                                                    الحقل مطلوب
-                                                                                </div>
-                                                                            </div>
+                                                                                name="email" >
+                                                                           
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -178,16 +187,16 @@
                                                             </div>
                                                             <div class="data-card ">
                                                                <div class="container-fluid">
-                                                                <div class="row py-3 gap-3">
+                                                                <div class="row py-3 g-3">
                                                                     <div class="col-md-10">
                                                                         <div class="row">
                                                                          <div class="col-md-auto">
                                                                             <label for="Password-hint" class="form-label"> تلميح كلمة السر  </label>
                                                                          </div>
-                                                                            <div class="col-md-4">
+                                                                            <div class="col-md-5">
                                                                                 <input type="text" id="Password-hint"
                                                                                 class="form-control inputs text-center"
-                                                                                name="Password-hint" required>
+                                                                                name="Password-hint" maxlength="50" required>
                                                                          
                                                                             </div>
                                                                         </div>
@@ -198,7 +207,7 @@
                                                                             <label for="automatic-logout" class="form-label"> وقت الخروج الآلي  </label>
                                                                          </div>
                                                                             <div class="col-md-2">
-                                                                                <div class="number-input-container Documents-days-input ">
+                                                                                <div class="number-input-container  ">
                                                                                     <div class="col">
                                                                                         <input type="number" value="5"
                                                                                             min="5" max="15"
@@ -360,21 +369,28 @@
     reader.readAsDataURL(event.target.files[0]);
   };
   </script>
-   
+       <!-- local scripts -->
+
    <script>
     document.addEventListener("DOMContentLoaded", function () {
 
         const data = {
             
             "email": "abdallah 359@gmail.com",
-          
+            "phone" : "01127237646",
+            "hint" : "401"
         };
       
         document.getElementById("email").value = data.email;
+        document.getElementById("phone").value = data.phone;
+        document.getElementById("Password-hint").value = data.hint;
+
 
     });
    
 </script>
+    <!-- local scripts -->
+
 <script>
     let deincrement = document.querySelector(".deincrement");
     let increment = document.querySelector(".increment");
