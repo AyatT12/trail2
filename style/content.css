@@ -685,7 +685,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .main-page-icon {
-  position: absolute;
+  position: sticky;
   left: -120px;
   bottom: 0;
   transition: left 0.3s ease, bottom 0.3s ease;
@@ -1356,8 +1356,8 @@ text-align: end;
     bottom: 0px;
 }
 .main-page-icon {
-  left: 0px;
-  bottom: 0px;
+bottom: 40px;
+right: 100%;
 }
 .main-container {
   position: static;
