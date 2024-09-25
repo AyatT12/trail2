@@ -80,7 +80,7 @@ body {
 }
 
 .menu::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
+  background:#e4e5e7;
   border-radius: 5px;
   height: 10px;
 } 
@@ -678,7 +678,7 @@ body.dark .sidebar li a:hover .text {
 }
 /* ================================================================================    Media   ======================================================================================= */
 /* ================================================================================================================================================================================== */
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
   .Company-name{
     display: none;
   }
@@ -689,7 +689,7 @@ body.dark .sidebar li a:hover .text {
       right: auto;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1300px) {
 #userDropdown{
     align-items: center;
     justify-content: center;
