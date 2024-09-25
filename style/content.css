@@ -1372,3 +1372,13 @@ html{
   height: 100%;
 }
 }
+
+@media(max-width : 550px) {
+  .custom-date-input:after {
+    left: 5px;
+    top: 60%;   
+}
+  input[type="date"] {
+    padding: 5px 5px;
+}
+}
