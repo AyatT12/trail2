@@ -38,7 +38,7 @@ html {
   background-color: white;
   box-shadow: 2px 3px 4px 0px #afb7c27d;
   border-radius: 8px;
-  padding: 15px;
+  padding: 25px;
 }
 
 .NewUpdate-container {
@@ -673,16 +673,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .new-Page-icon {
-  width: 47px;
-  height: 47px;
+
   position: absolute;
   bottom: 0px;
   left: -60px;
 }
 
-/* .new-Page-icon img {
-  width: 100%;
-} */
+.new-Page-icon img {
+  width: 47px;
+  height: 47px;
+}
 
 .main-page-icon {
   position: absolute;
@@ -1370,15 +1370,5 @@ text-align: end;
 html{
   position: relative;
   height: 100%;
-}
-}
-
-@media(max-width : 550px) {
-  .custom-date-input:after {
-    left: 5px;
-    top: 60%;   
-}
-  input[type="date"] {
-    padding: 5px 5px;
 }
 }
