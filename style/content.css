@@ -291,24 +291,7 @@ color:#70399C;
 
 
 /*  */
-@media (min-width: 576px) and (max-width :766px) {
 
-  .container,
-  .container-sm {
-    max-width: 620px;
-  }
-}
-
-@media (max-height: 760px) {
-
-  .scroll-table-div {
-    height: 65vh;
-    min-height: 400px;
-    overflow: auto;
-    padding: 5px;
-  }
-
-}
 
 /* ================================================================================ search input   ======================================================================================= */
 
@@ -1284,10 +1267,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
 }
 .scroll-reportTable-div {
-height: 65vh;
+height: 67.3vh;
 }
 .scroll-extendreportTable-div{
-  height: 50vh;
+  height: 54.1vh;
+}
+.filter-search-reportTable{
+  height: 64.6vh;
 }
 .report-tables-style th{
 text-align: end;
@@ -1371,4 +1357,31 @@ html{
   position: relative;
   height: 100%;
 }
+}
+@media (min-width: 576px) and (max-width :766px) {
+
+  .container,
+  .container-sm {
+    max-width: 620px;
+  }
+}
+
+@media (max-height: 800px) {
+
+  .scroll-table-div {
+    height: 65vh;
+    min-height: 400px;
+    overflow: auto;
+    padding: 5px;
+  }
+  .scroll-reportTable-div {
+    height: 61.9vh;
+  }
+  .scroll-extendreportTable-div{
+    height: 45.3vh;
+    min-height: 310px;
+  }
+  .filter-search-reportTable{
+    height: 59vh;
+  }
 }
