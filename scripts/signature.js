@@ -53,7 +53,7 @@ removeSignatureImg.addEventListener("click", function (event) {
     mainContainer.innerHTML = "";
     uploadContainer.classList.remove("previewing");
     uploadContainer.innerHTML =
-      ' <img class="upload-icon" src="../../../images/Rectangle 144.png" alt="Upload Icon"><p>ارفق صورة التوقيع</p>';
+      '<p>ارفق صورة التوقيع</p>';
   }
 });
 // // //////////////////////////////////////////////// كتابة التوقيع ////////////////////////////////////////////////////////////////////////
@@ -151,8 +151,12 @@ function SaveWrittenSignature() {
 function SaveUplodedSignature() {
     const img = document.getElementById("signatureImage");
     const canvas = document.createElement("canvas");
-    canvas.width = img.width;
+    if(img){
+      canvas.width = img.width;
     canvas.height = img.height;
+    }else{
+      return
+    }
     const context = canvas.getContext("2d");
     context.drawImage(img, 0, 0, canvas.width, canvas.height);
     
