@@ -43,7 +43,7 @@
                                         <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
                                         <p class="m-0">مشرف علي الفروع</p>
                                     </div>
-                                    <img src="../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                    <img src="../../images/pic (3).svg"
                                         alt="User Avatar" class="rounded-circle User-Avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/reports.svg" class="icon" />
+                                            <img src="../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#reports-items" aria-expanded="false"
                                                 aria-controls="#reports-items">التقارير </span>
@@ -168,7 +168,7 @@
                                             <a class="collapse-item" href="../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Cars contracts.html"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee contracts.html"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../Pages/reports/Drivers contracts.html"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Tenant Financial movement.html"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -177,15 +177,22 @@
                                     </div>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/statics.svg" class="icon" />
+                                            <img src="../../images/statics.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#statics-items" aria-expanded="false"
+                                            aria-controls="#statics-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#statics-items" aria-expanded="false"
                                                 aria-controls="#statics-items"> الإحصائيات </span>
                                         </a>
                                     </li>
-                                    <div id="statics-items" class="collapse">
+                                   <div id="statics-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
 
+                                            <a class="collapse-item" href=""> إحصائيات السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات العقود<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -243,11 +250,11 @@
                                                 <input type="date" class="form-control inputs custom-date-input" id="start-date" name="start-date" required>
                                             </div>
                                           <div class="col-xl-4 d-flex  gap-3 align-items-center">
-                                            <label for="end-date">الي</label>
+                                            <label for="end-date"> إلى </label>
                                            <input type="date" class="form-control inputs custom-date-input" id="end-date" name="end-date" required>
                                           </div>
                                            
-                                           <button type="submit" class="custom-img-btn"><img src="../../images/input field.svg" ></button>
+                                           <button type="submit" class="btn btn-standard"> عرض </button>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 search-input-col">
@@ -265,34 +272,31 @@
                                     <table class=" tables-style table table-borderless report-tables-style" id="table">
                                         <thead class="sticky-top">
                                             <tr>
-                                                <th scope="col">ملاحظات</th>
                                                 <th scope="col">منفذ الإجراء </th>
                                                 <th scope="col"> نوع الإجراء</th>
                                                 <th scope="col"> الإجراء</th>
-                                                <th scope="col" class="firstTable-col"> رقم الإجراء</th>
+                                                <th scope="col" class="DifferAlign"> رقم الإجراء</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             
                                          <tr>
+                                          
                                             <td>
-                                                <textarea class=" form-control textarea-table-inputs"
-                                                rows="1" maxlength="100" name="notes"
-                                                type="text"></textarea>
+                                                <p class="FirstLineP" > حسن موفق عمر مجدي </p>
+                                                <p class="secondLineP"> :  ملاحظات </p> 
+                                                <span class="secondLineP"> </span>
                                             </td>
                                             <td>
-                                                حسن موفق عمر مجدي
+                                               <P class="FirstLineP">اضافة</P>
                                             </td>
-                                            <td>
-                                                إضافة
-                                            </td>
-                                            <td class="firstTable-col">
-                                                <p> تصريح هيئة النقل</p>
+                                            <td class="DifferAlign">
+                                                <p class="FirstLineP"> تصريح هيئة النقل</p>
                                                <p class="secondLineP">الربوة النموذجي</p>
                                             </td>
-                                            <td class="firstTable-col">
-                                               <p> 1016050744</p>
+                                            <td class="DifferAlign">
+                                               <p class="FirstLineP"> 24-1301-4004106-000100</p>
                                                <p class="secondLineP">19/09/2024</p>
                                             </td>
                                             <td>
@@ -300,23 +304,22 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                          
                                             <td>
-                                                <textarea class=" form-control textarea-table-inputs"
-                                                rows="1" maxlength="100" name="notes"
-                                                type="text"></textarea>
+                                                <p class="FirstLineP" > حسن موفق عمر مجدي </p>
+                                                <p class="secondLineP"> :  ملاحظات </p> 
+                                                <span class="secondLineP"> </span>
                                             </td>
                                             <td>
-                                                حسن موفق عمر مجدي
+                                                <P class="FirstLineP">اضافة</P>
+
                                             </td>
-                                            <td>
-                                                إضافة
-                                            </td>
-                                            <td class="firstTable-col">
-                                                <p>اشتراك الغرفة التجارية</p>
+                                            <td class="DifferAlign">
+                                                <p class="FirstLineP">اشتراك الغرفة التجارية</p>
                                                <p class="secondLineP"> الهضبة</p>
                                             </td>
-                                            <td class="firstTable-col">
-                                               <p> 1016050744</p>
+                                            <td class="DifferAlign">
+                                               <p class="FirstLineP"> 24-1301-4004106-000100</p>
                                                <p class="secondLineP">19/09/2024</p>
                                             </td>
                                             <td>
@@ -324,30 +327,28 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            
                                             <td>
-                                                <textarea class=" form-control textarea-table-inputs"
-                                                rows="1" maxlength="100" name="notes"
-                                                type="text"></textarea>
+                                                <p class="FirstLineP" >  رامي عبدالحليم عثمان عماد </p>
+                                                <p class="secondLineP"> :  ملاحظات </p> 
+                                                <span class="secondLineP"> </span>
                                             </td>
                                             <td>
-                                                رامي عبدالحليم عثمان عماد
+                                                <P class="FirstLineP">تعديل</P>
+
                                             </td>
-                                            <td>
-                                                تعديل
-                                            </td>
-                                            <td class="firstTable-col">
-                                                <p> تحديث بيانات بنك</p>
+                                            <td class="DifferAlign">
+                                                <p class="FirstLineP"> تحديث بيانات بنك</p>
                                                <p class="secondLineP">إيرادات المستأجرين بمصرف الانماء </p>
                                             </td>
-                                            <td class="firstTable-col">
-                                               <p> 1016050744</p>
+                                            <td class="DifferAlign">
+                                               <p class="FirstLineP"> 24-1301-4004106-000100</p>
                                                <p class="secondLineP">19/09/2024</p>
                                             </td>
                                             <td>
                                                 3
                                             </td>
                                         </tr>
-                                             
                                         
                                         </tbody>
                                     </table>

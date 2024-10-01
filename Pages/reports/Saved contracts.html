@@ -43,7 +43,7 @@
                                         <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
                                         <p class="m-0">مشرف علي الفروع</p>
                                     </div>
-                                    <img src="../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                    <img src="../../images/pic (3).svg"
                                         alt="User Avatar" class="rounded-circle User-Avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/reports.svg" class="icon" />
+                                           <img src="../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#reports-items" aria-expanded="false"
                                                 aria-controls="#reports-items">التقارير </span>
@@ -168,7 +168,7 @@
                                             <a class="collapse-item" href="../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Cars contracts.html"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee contracts.html"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                             <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                              <a class="collapse-item" href="../../Pages/reports/Drivers contracts.html"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Tenant Financial movement.html"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -178,15 +178,22 @@
                                     </div>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/statics.svg" class="icon" />
+                                            <img src="../../images/statics.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#statics-items" aria-expanded="false"
+                                            aria-controls="#statics-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#statics-items" aria-expanded="false"
                                                 aria-controls="#statics-items"> الإحصائيات </span>
                                         </a>
                                     </li>
-                                    <div id="statics-items" class="collapse">
+                                   <div id="statics-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
 
+                                            <a class="collapse-item" href=""> إحصائيات السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات العقود<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -230,271 +237,110 @@
                 <div class="col d-flex align-items-center justify-content-center">
                     <div class="container main-container">
                         <form action="">
-                            <div class="row g-3 mb-3">
+                            <div class="row g-3 mb-5">
                                 <div class="col">
                                     <h3> العقود المحفوظة</h3>
                                 </div>
-                              <div class="row g-2">
-
-                                  
-                                    <div class="col-lg-8">
-                                        <div class="col-12 d-flex align-items-center Search-col  flex-wrap gap-2">
-                                            <div class="col-xl-4 d-flex  gap-3 align-items-center">
-                                                <label for="start-date">من</label>
-                                                <input type="date" class="form-control inputs custom-date-input" id="start-date" name="start-date" required>
-                                            </div>
-                                          <div class="col-xl-4 d-flex  gap-3 align-items-center">
-                                            <label for="end-date">الي</label>
-                                           <input type="date" class="form-control inputs custom-date-input" id="end-date" name="end-date" required>
-                                          </div>
-                                           
-                                           <button type="submit" class="custom-img-btn"><img src="../../images/input field.svg" ></button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 search-input-col">
-                                        <div class="form-outline w-100" data-mdb-input-init>
-                                            <span class="fa fa-search"></span>
-                                            <input type="search" id="search" class="form-control inputs search-input"
-                                                name="search" aria-label="Search" autofocus autocomplete="off" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 filters-col">
-                                            <div class="filters-custom-order">
-                                               
-                                                <label class="form-check-label" for="all">الكل</label>
-                                                <input class="form-check-input custom" type="radio" name="Options" id="all"
-                                                value="All" checked />
-                                            </div>
-        
-                                            <div class="filters-custom-order">
-                                              
-                                                <label class="form-check-label  filter3" for="ended">منتهي</label>
-                                                <input class="form-check-input custom" type="radio" name="Options" id="ended"
-                                                value="ended" />
-                                            </div>
-        
-                                            <div class="filters-custom-order">
-                                               
-                                                <label class="form-check-label  filter1" for="today">اليوم</label>
-                                                <input class="form-check-input custom" type="radio" name="Options" id="today"
-                                                value="today" />
-                                            </div>
-                                            <div class="filters-custom-order">
-                                              
-                                                <label class="form-check-label filter2" for="tomorrow">غدًا</label>
-                                                <input class="form-check-input custom" type="radio" name="Options" id="tomorrow"
-                                                value="tomorrow" />
-                                            </div>
-                                            <div class="filters-custom-order">
-                                              
-                                                <label class="form-check-label filter4" for="later">لاحقًا</label>
-                                                <input class="form-check-input custom" type="radio" name="Options" id="later"
-                                                value="later" />
-                                            </div>
-                                        </div>
-                                    </div>
-                              </div>
+                            
                             </div>
                          
                             <div class="row table-row px-3">
-                                <div class="col  scroll-table-div filter-search-reportTable table-responsive-sm  w-100  ">
+                                <div class="col  scroll-table-div  table-responsive-sm  w-100  ">
                                     <table class=" tables-style table table-borderless " id="table">
                                         <thead class="sticky-top">
                                             <tr>
-                                                <th scope="col"> العقد الموحد </th>
-                                                <th scope="col"> العقد  </th>
-                                                <th scope="col"> الفاتورة </th>
                                                 <th scope="col">المبلغ المدفوع</th>
                                                 <th scope="col">القيمة المتوقعة  </th>
-                                                <th scope="col"> الأيام </th>
+                                                <th> عدد الأيام</th>
+                                                <th scope="col" class="DifferAlign"> المستأجر و السيارة  </th>
                                                 <th scope="col"> الفرع</th>
-                                                <th scope="col" class="firstTable-col"> العقد </th>
+                                                <th scope="col" class="DifferAlign"> العقد </th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                          
 
                                             <td>14,000.02</td>
                                             <td>14.839.02</td>
                                             <td>100</td>
+                                            <td class="DifferAlign">
+                                                <p>مرسي ياسر وائل عبدالرحمن</p>
+                                                <div class="car-name-color" >
+                                                    <p class="secondLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                    <div class="CarColor" style="background: #636C14;"></div>
+                                                </div>
+                                        </td>
                                             <td>التاخي</td>
-                                            <td class="firstTable-col">
+                                            <td class="DifferAlign">
                                                 <p class="FirstLineP"> 24-1401-4004104-000049</p>
                                                 <div class="d-flex justify-content-end gap-1">
-                                                    <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                    <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">22/09/2024<span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">29/11/2024 <span class="time">  11:30 </span></p>
                                                 </div>
                                             </td>
                                             <td>
-                                              <div class="filter-number-td">
-    
-                                                  <div class="filters filter4-div"></div>
-    
-                                                  <div>1</div>
-    
-                                               </div>
+                                              1
                                                 
                                             </td>
                                        
                                         </tr>
                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                          
 
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td>78,000</td>
-                                            <td>77.711.25</td>
-                                            <td>150</td>
+                                            <td>14,000.02</td>
+                                            <td>14.839.02</td>
+                                            <td>100</td>
+                                            <td class="DifferAlign">
+                                                <p>مرسي ياسر وائل عبدالرحمن</p>
+                                                <div class="car-name-color" >
+                                                    <p class="secondLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                    <div class="CarColor" style="background: #636C14;"></div>
+                                                </div>
+                                        </td>
                                             <td>المحمدية</td>
-                                            <td class="firstTable-col">
-                                                <p class="FirstLineP"> 24-1401-4004104-000050</p>
+                                            <td class="DifferAlign">
+                                                <p class="FirstLineP"> 24-1401-4004104-000049</p>
                                                 <div class="d-flex justify-content-end gap-1">
-                                                    <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                    <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">22/09/2024<span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">29/11/2024 <span class="time">  11:30 </span></p>
                                                 </div>
                                             </td>
                                             <td>
-                                              <div class="filter-number-td">
-    
-                                                  <div class="filters filter4-div"></div>
-    
-                                                  <div>2</div>
-    
-                                               </div>
+                                            2
                                                 
                                             </td>
                                        
                                         </tr>
                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                          
 
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td>2,3657</td>
-                                            <td>3.697.25</td>
-                                            <td>50</td>
+                                            <td>14,000.02</td>
+                                            <td>14.839.02</td>
+                                            <td>100</td>
+                                            <td class="DifferAlign">
+                                                <p>مرسي ياسر وائل عبدالرحمن</p>
+                                                <div class="car-name-color" >
+                                                    <p class="secondLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                    <div class="CarColor" style="background: #636C14;"></div>
+                                                </div>
+                                        </td>
                                             <td>الحزام الذهبي</td>
-                                            <td class="firstTable-col">
-                                                <p class="FirstLineP"> 24-1401-4004104-000051</p>
+                                            <td class="DifferAlign">
+                                                <p class="FirstLineP"> 24-1401-4004104-000049</p>
                                                 <div class="d-flex justify-content-end gap-1">
-                                                    <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                    <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">22/09/2024<span class="time">  11:30 </span></p>
+                                                    <p class="secondLineP">29/11/2024 <span class="time">  11:30 </span></p>
                                                 </div>
                                             </td>
                                             <td>
-                                              <div class="filter-number-td">
-    
-                                                  <div class="filters filter3-div"></div>
-    
-                                                  <div>3</div>
-    
-                                               </div>
+                                           3
                                                 
                                             </td>
                                        
                                         </tr>
-                                             
-                                         <tr>
-                                           <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
-
-                                            <td>3.697.25</td>
-                                            <td>3.697.25</td>
-                                            <td>51</td>
-                                            <td>الزهور</td>
-                                            <td class="firstTable-col">
-                                                <p class="FirstLineP"> 24-1401-4004104-000050</p>
-                                                <div class="d-flex justify-content-end gap-1">
-                                                    <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                    <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
-                                                </div>
-                                            </td>
-                                            <td>
-                                              <div class="filter-number-td">
-    
-                                                  <div class="filters filter1-div"></div>
-    
-                                                  <div>4</div>
-    
-                                               </div>
-                                                
-                                            </td>
                                        
-                                        </tr>
-                                        <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td>3.697.25</td>
-                                             <td>77.711.25</td>
-                                             <td>50</td>
-                                             <td>الحزام الذهبي</td>
-                                             <td class="firstTable-col">
-                                                 <p class="FirstLineP"> 24-1401-4004104-000050</p>
-                                                 <div class="d-flex justify-content-end gap-1">
-                                                     <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                     <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
-                                                 </div>
-                                             </td>
-                                             <td>
-                                               <div class="filter-number-td">
-     
-                                                   <div class="filters filter2-div"></div>
-     
-                                                   <div>5</div>
-     
-                                                </div>
-                                                 
-                                             </td>
-                                        
-                                         </tr>
-                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
- 
-                                             <td>3.697.25</td>
-                                             <td>77.711.25</td>
-                                             <td>50</td>
-                                             <td>الحزام الذهبي</td>
-                                             <td class="firstTable-col">
-                                                 <p class="FirstLineP"> 24-1401-4004104-000050</p>
-                                                 <div class="d-flex justify-content-end gap-1">
-                                                     <p class="secondLineP">2024/9/22<span class="time">  11:30 </span></p>
-                                                     <p class="secondLineP">2024/11/29 <span class="time">  11:30 </span></p>
-                                                 </div>
-                                             </td>
-                                             <td>
-                                               <div class="filter-number-td">
-     
-                                                   <div class="filters filter2-div"></div>
-     
-                                                   <div>6</div>
-     
-                                                </div>
-                                                 
-                                             </td>
-                                        
-                                         </tr>
                                               
                                         </tbody>
                                     </table>

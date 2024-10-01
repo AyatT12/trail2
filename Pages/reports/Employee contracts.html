@@ -43,7 +43,7 @@
                                         <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
                                         <p class="m-0">مشرف علي الفروع</p>
                                     </div>
-                                    <img src="../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                    <img src="../../images/pic (3).svg"
                                         alt="User Avatar" class="rounded-circle User-Avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -96,10 +96,10 @@
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#company-items" aria-expanded="false" aria-controls="#company-items">الشركة </span>
                                     </li>
                                     <div id="company-items" class="collapse">
-                                        <div class="bg-white gap-3 collapse-inner rounded">
-                                            <a class="collapse-item " href="Branches.html"> الفروع <i
+                                      <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../Pages/company/Branches/Branches.html"> الفروع <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="../owners/owners.html"> الملاك <i
+                                            <a class="collapse-item" href="../../Pages/company/owners/owners.html"> الملاك <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="#">العقود <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/reports.svg" class="icon" />
+                                           <img src="../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#reports-items" aria-expanded="false"
                                                 aria-controls="#reports-items">التقارير </span>
@@ -168,7 +168,7 @@
                                             <a class="collapse-item" href="../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item " href="../../Pages/reports/Cars contracts.html"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item active" href="../../Pages/reports/Employee contracts.html"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                             <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                              <a class="collapse-item" href="../../Pages/reports/Drivers contracts.html"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Tenant Financial movement.html"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -178,15 +178,22 @@
                                     </div>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/statics.svg" class="icon" />
+                                            <img src="../../images/statics.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#statics-items" aria-expanded="false"
+                                            aria-controls="#statics-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#statics-items" aria-expanded="false"
                                                 aria-controls="#statics-items"> الإحصائيات </span>
                                         </a>
                                     </li>
-                                    <div id="statics-items" class="collapse">
+                                   <div id="statics-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
 
+                                            <a class="collapse-item" href=""> إحصائيات السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات العقود<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -257,7 +264,7 @@
                                                 <th scope="col"> العقود المنفذة  </th>
                                                 <th scope="col"> قيمة العقود</th>
                                                 <th scope="col"> آخر عقد</th>
-                                                <th scope="col" class="firstTable-col"> الموظف</th>
+                                                <th scope="col" class="DifferAlign"> الموظف</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -278,9 +285,21 @@
                                                 <td>
                                                     <p>21/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">رامي عبدالحليم عثمان عماد</p>
-                                                   
+                                                <td class="DifferAlign">
+                                                   <div class="d-flex gap-2 align-items-center" >
+                                                    <div class="col">
+                                                        <p class="FirstLineP"> عيسي هاني مبروك عزام    </p>
+                                                    </div>
+                                                    <div class="col-auto d-flex justify-content-end">
+                                                        <div class="employee">
+                                                            <img src="../../images/pic (3).svg"
+                                                                alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                            <div class="active_statue bg-danger"></div>
+
+                                                        </div>
+                                                    </div>
+
+                                                   </div>
                                                 </td>
                                                 <td>
                                                    1
@@ -302,10 +321,22 @@
                                                 <td>
                                                     <p>18/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">  موفق رجب هاني موفق </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP"> موفق رجب هاني موفق  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                    2
                                                 </td>
@@ -326,10 +357,22 @@
                                                 <td>
                                                     <p>21/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP"> مصطفى عمر فوزي صادق  </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP"> مصطفى عمر فوزي صادق  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue bg-danger "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                    3
                                                 </td>
@@ -350,10 +393,22 @@
                                                 <td>
                                                     <p>22/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP"> مرسي مصطفى نبيل علي  </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP"> مرسي مصطفى نبيل علي  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                    4
                                                 </td>
@@ -374,10 +429,22 @@
                                                 <td>
                                                     <p>25/06/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">  محسن عبدالمجيد ناصر الحارثي </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP">  محسن عبدالمجيد ناصر الحارثي  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue bg-danger "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                    5
                                                 </td>
@@ -398,10 +465,22 @@
                                                 <td>
                                                     <p>08/07/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP"> حسن موفق عمر مجدي   </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP">  حسن موفق عمر مجدي  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue  bg-danger "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                    6
                                                 </td>
@@ -422,15 +501,62 @@
                                                 <td>
                                                     <p>10/07/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP"> عبدالجبار أنس سرور موسي  </p>
-                                                   
-                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                         <p class="FirstLineP">  عبدالجبار أنس سرور موسي  </p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
                                                 <td>
                                                   7 
                                                 </td>
                                             </tr>
-                                         
+                                            <tr>
+                                                <td>
+                                                    <p>4,800</p>
+                                                </td>
+                                                <td>
+                                                    <p>0</p>
+                                                </td>
+                                                <td>
+                                                    <p>87</p>
+                                                </td>
+                                                <td>
+                                                    <p>2,698.00</p>
+                                                </td>
+                                                <td>
+                                                    <p>10/07/2024</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <div class="d-flex gap-2 align-items-center" >
+                                                     <div class="col">
+                                                        <p class="FirstLineP">رامي عبدالحليم عثمان عماد</p>
+                                                     </div>
+                                                     <div class="col-auto d-flex justify-content-end">
+                                                         <div class="employee">
+                                                             <img src="../../images/pic (3).svg"
+                                                                 alt="empolyee-photo" class="employee border-0 w-100 h-100">
+                                                             <div class="active_statue "></div>
+ 
+                                                         </div>
+                                                     </div>
+ 
+                                                    </div>
+                                                 </td>
+                                                <td>
+                                                  8
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
 

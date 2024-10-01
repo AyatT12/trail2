@@ -43,7 +43,7 @@
                                         <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
                                         <p class="m-0">مشرف علي الفروع</p>
                                     </div>
-                                    <img src="../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                    <img src="../../images/pic (3).svg"
                                         alt="User Avatar" class="rounded-circle User-Avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -96,10 +96,10 @@
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#company-items" aria-expanded="false" aria-controls="#company-items">الشركة </span>
                                     </li>
                                     <div id="company-items" class="collapse">
-                                        <div class="bg-white gap-3 collapse-inner rounded">
-                                            <a class="collapse-item " href="Branches.html"> الفروع <i
+                                      <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../Pages/company/Branches/Branches.html"> الفروع <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="../owners/owners.html"> الملاك <i
+                                            <a class="collapse-item" href="../../Pages/company/owners/owners.html"> الملاك <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="#">العقود <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/reports.svg" class="icon" />
+                                           <img src="../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#reports-items" aria-expanded="false"
                                                 aria-controls="#reports-items">التقارير </span>
@@ -168,24 +168,31 @@
                                             <a class="collapse-item" href="../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item " href="../../Pages/reports/Cars contracts.html"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee contracts.html"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item active" href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/reports/Drivers contracts.html"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item " href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item active" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Tenant Financial movement.html"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/statics.svg" class="icon" />
+                                            <img src="../../images/statics.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#statics-items" aria-expanded="false"
+                                            aria-controls="#statics-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#statics-items" aria-expanded="false"
                                                 aria-controls="#statics-items"> الإحصائيات </span>
                                         </a>
                                     </li>
-                                    <div id="statics-items" class="collapse">
+                                   <div id="statics-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
 
+                                            <a class="collapse-item" href=""> إحصائيات السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات العقود<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -254,9 +261,9 @@
                                                 <th> الرصيد المحجوز  </th>
                                                 <th> الرصيد المتاح </th>
                                                 <th> الرصيد </th>
+                                                <th class="DifferAlign">الحساب</th>
                                                 <th>الفرع</th>
-                                                <th class="firstTable-col">الحساب</th>
-                                                <th class="firstTable-col"> نقطة البيع</th>
+                                                <th class="DifferAlign"> نقطة البيع</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -272,13 +279,14 @@
                                                 <td>
                                                     <p>2,258.48</p>
                                                 </td>
+                                               
+                                                <td class="DifferAlign">
+                                                    <p>الصندوق</p>
+                                                </td>
                                                 <td>
                                                     <p>التاخي</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p>الصندوق</p>
-                                                </td>
-                                                <td class="firstTable-col">
+                                                <td class="DifferAlign">
                                                     <p class="FirstLineP"> صندوق فرع التاخي  </p>
                                                     <p class="secondLineP"> الصندوق النقدي</p>
                                                 </td>
@@ -297,13 +305,14 @@
                                                <td>
                                                    <p>34,944.83</p>
                                                </td>
+                                               <td class="DifferAlign">
+                                                <p>إبرادات المستأجرين بمصرف الانماء</p>
+                                            </td>
                                                <td>
                                                    <p>الياسمين</p>
                                                </td>
-                                               <td class="firstTable-col">
-                                                   <p>إبرادات المستأجرين بمصرف الانماء</p>
-                                               </td>
-                                               <td class="firstTable-col">
+                                              
+                                               <td class="DifferAlign">
                                                    <p class="FirstLineP"> نقطة اليامسين الانماء </p>
                                                    <p class="secondLineP"> مصرف الإنماء </p>
                                                </td>
@@ -322,13 +331,14 @@
                                            <td>
                                                <p>2,258.48</p>
                                            </td>
+                                           <td class="DifferAlign">
+                                            <p>إبرادات المستأجرين بمصرف الراجحي</p>
+                                        </td>
                                            <td>
                                                <p>المحمدية</p>
                                            </td>
-                                           <td class="firstTable-col">
-                                               <p>إبرادات المستأجرين بمصرف الراجحي</p>
-                                           </td>
-                                           <td class="firstTable-col">
+                                          
+                                           <td class="DifferAlign">
                                                <p class="FirstLineP"> نقطة المحمدية الراجحي </p>
                                                <p class="secondLineP"> مصرف الراجحي</p>
                                            </td>
@@ -590,7 +600,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../scripts/Scripts.js"></script>
-    <!-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             var table = document.getElementById("table");
             var rows = table.getElementsByTagName("tr");
@@ -600,11 +610,11 @@
 
                 for (var j = 0; j < cells.length; j++) {
                     cells[j].addEventListener("click", function () {
-                        window.location.href = "Detailed data car contracts.html";
+                        window.location.href = "Detailed SalePoint Financial movement .html";
                     });
                 }
             }
         });
-    </script> -->
+    </script>
 </body>
 </html>

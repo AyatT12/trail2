@@ -43,7 +43,7 @@
                                         <span style="font-weight: 700;"> عيسي هاني مبروك عزام </span>
                                         <p class="m-0">مشرف علي الفروع</p>
                                     </div>
-                                    <img src="../../images/ditch-this-man-zapper-to-increase-virility.jpg"
+                                    <img src="../../images/pic (3).svg"
                                         alt="User Avatar" class="rounded-circle User-Avatar">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -96,10 +96,10 @@
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#company-items" aria-expanded="false" aria-controls="#company-items">الشركة </span>
                                     </li>
                                     <div id="company-items" class="collapse">
-                                        <div class="bg-white gap-3 collapse-inner rounded">
-                                            <a class="collapse-item " href="Branches.html"> الفروع <i
+                                      <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item " href="../../Pages/company/Branches/Branches.html"> الفروع <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="../owners/owners.html"> الملاك <i
+                                            <a class="collapse-item" href="../../Pages/company/owners/owners.html"> الملاك <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="#">العقود <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -152,7 +152,7 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/reports.svg" class="icon" />
+                                           <img src="../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#reports-items" aria-expanded="false"
                                                 aria-controls="#reports-items">التقارير </span>
@@ -168,7 +168,7 @@
                                             <a class="collapse-item" href="../../Pages/reports/Closed Contracts.html"> العقود المغلقة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item active" href="../../Pages/reports/Cars contracts.html"> عقود السيارات  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee contracts.html"> عقود الموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                             <a class="collapse-item" href="#"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                             <a class="collapse-item" href="../../Pages/reports/Drivers contracts.html"> عقود السائقين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Employee Financial movement.html"> الحركة المالية للموظفين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/SalePoint Financial movement.html"> الحركة المالية لنقاط البيع  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../Pages/reports/Tenant Financial movement.html"> الحركة المالية للمستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -178,7 +178,9 @@
                                     </div>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../images/statics.svg" class="icon" />
+                                            <img src="../../images/statics.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#statics-items" aria-expanded="false"
+                                            aria-controls="#statics-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#statics-items" aria-expanded="false"
                                                 aria-controls="#statics-items"> الإحصائيات </span>
@@ -187,6 +189,11 @@
                                     <div id="statics-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
 
+                                            <a class="collapse-item" href=""> إحصائيات السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات العقود<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود السيارات <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href=""> إحصائيات عقود المستأجرين <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                     </div>
@@ -255,7 +262,7 @@
                                                 <th scope="col">عدد الأيام </th>
                                                 <th scope="col"> عدد العقود</th>
                                                 <th scope="col"> آخر عقد</th>
-                                                <th scope="col" class="firstTable-col"> السيارة</th>
+                                                <th scope="col" class="DifferAlign"> السيارة</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -274,8 +281,11 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 - زيتي</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                        <div class="CarColor" style="background: #636C14;"></div>
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
@@ -296,8 +306,12 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">فورد - تورس -  سيدان متوسطة - 2021 - ع ط ر 3946 - أسود +</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">فورد - تورس -  سيدان متوسطة - 2021 - ع ط ر 3946 </p>
+                                                        <div class="CarColor" style="background: #000000;"></div>
+                                                    </div>
+
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
@@ -318,9 +332,15 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - سوناتا - سيدان متوسطة - 2013 - ج ط ع 465 - سماوي </p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - سوناتا - سيدان متوسطة - 2013 - ج ط ع 465  </p>
+                                                        <div class="CarColor" style="background: #89ACEF;"></div>
+
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
+
+
                                                 </td>
                                                 <td>
                                                    3
@@ -340,8 +360,11 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 - زيتي</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                        <div class="CarColor" style="background: #041a58;"></div>
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
@@ -362,8 +385,11 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 - زيتي</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                        <div class="CarColor" style="background: #cac8c8;"></div>
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
@@ -384,8 +410,11 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 - زيتي</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                        <div class="CarColor" style="background: #3b1355;"></div>
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
@@ -406,8 +435,11 @@
                                                 <td>
                                                     <p>26/09/2024</p>
                                                 </td>
-                                                <td class="firstTable-col">
-                                                    <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 - زيتي</p>
+                                                <td class="DifferAlign">
+                                                    <div class="car-name-color" >
+                                                        <p class="FirstLineP">هيونداي - أزيرا - سيدان صغيرة - 2021 - ع س ب 8023 </p> 
+                                                        <div class="CarColor" style="background: #636C14;"></div>
+                                                    </div>
                                                     <p class="secondLineP"> 1017503400 </p>
                                                 </td>
                                                 <td>
