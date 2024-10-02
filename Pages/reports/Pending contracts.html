@@ -307,21 +307,21 @@
                                                 <th scope="col">التعويضات </th>
                                                 <th scope="col"> المصروفات   </th>
                                                 <th scope="col"> قيمة العقد </th>
-                                                <th scope="col">  الفرع </th>
+                                                <th scope="col" class="DifferAlign" >  الفرع </th>
                                                 <th scope="col" class="DifferAlign"> العقد </th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                            <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank"><img src="../../images/Rectangle 196.svg"></a></td>
                                            
                                            <td>14.839.02</td>
                                            <td>0.00</td>
                                            <td>0.00</td>
                                            <td>14.839.02</td>
-                                           <td>الحزام الذهبي</td>
-                                            <td class="DifferAlign"  data-bs-toggle="modal" data-bs-target="#DataModal">
+                                           <td class="DifferAlign">الحزام الذهبي</td>
+                                            <td class="DifferAlign">
                                                 <p class="FirstLineP"> 24-1401-4004104-000049</p>
                                                 <div class="d-flex justify-content-end gap-4">
                                                     <p class="secondLineP">22/09/2024</p>
@@ -339,14 +339,14 @@
                                        
                                         </tr>
                                         <tr>
-                                            <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                            <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank"><img src="../../images/Rectangle 196.svg"></a></td>
                                            
                                            <td>77.711.25</td>
                                            <td>0.00</td>
                                            <td>0.00</td>
                                            <td>77.711.25</td>
-                                           <td>المحمدية</td>
-                                            <td class="DifferAlign"  data-bs-toggle="modal" data-bs-target="#DataModal">
+                                           <td class="DifferAlign">المحمدية</td>
+                                            <td class="DifferAlign">
                                                 <p class="FirstLineP"> 24-1401-4004104-000049</p>
                                                 <div class="d-flex justify-content-end gap-4">
                                                     <p class="secondLineP">22/09/2024</p>
@@ -613,7 +613,7 @@
               <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                       <div class="modal-header border-0">
-                          <h1 class="modal-title fs-5 w-100 text-center" id="DataModalLabel"> تفاصيل بيانات القيد </h1>
+                          <h1 class="modal-title fs-5 w-100 text-center" id="DataModalLabel"> تفاصيل بيانات العقد </h1>
                           <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
@@ -631,7 +631,7 @@
                                                   </div>
                                               </div>
                                           </div>
-  
+   
                                   
                                           <div class="col-md-12">
                                               <div class="row">
@@ -656,10 +656,10 @@
                                           <div class="col-md-12">
                                               <div class="row">
                                                   <div class="col-auto">
-                                                      <p> رقم العهدة  </p>
+                                                      <p> رقم العقد  </p>
                                                   </div>
                                                   <div class=" col-md-auto Saved-data">
-                                                      <p> 24-1304-4004106-000053  </p>
+                                                      <p> 24-1401-4001104-000067  </p>
                                                   </div>
                                               </div>
                                           </div>
@@ -689,7 +689,7 @@
                                                       <p> الفاتورة </p>
                                                   </div>
                                                   <div class=" col-md-auto Saved-data">
-                                                     <a href="" target="_blank"> <img src="../../images/Rectangle 196.svg"></a>
+                                                     <a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank"> <img src="../../images/Rectangle 196.svg"></a>
                                                   </div>
                                               </div>
                                           </div>
@@ -700,7 +700,7 @@
                                                   </div>
                                                   <div class=" col-md-auto Saved-data">
                                                     <a href="" target="_blank"> <img src="../../images/Rectangle 196.svg"></a>
-
+   
                                                   </div>
                                               </div>
                                           </div>
@@ -727,7 +727,23 @@
     <script src="../../scripts/Scripts.js"></script>
    
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var table = document.getElementById("table");
+            var rows = table.getElementsByTagName("tr");
+    
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+    
+                for (var j = 1; j < cells.length; j++) {
+                    cells[j].addEventListener("click", function () {
+                        var modal = new bootstrap.Modal(document.getElementById("DataModal"));
+                        modal.show();
+                    });
+                }
+            }
+        });
+    </script>
 
 
 

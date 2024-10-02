@@ -363,7 +363,7 @@
                                         <tbody>
 
                                             <tr >
-                                                <td><a href="#"><img src="../../images/Rectangle 196.svg"></a></td>
+                                                <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank"><img src="../../images/Rectangle 196.svg"></a></td>
                                                 <td>
                                                     <p>مصطفى عمر فوزي صادق</p>
                                                 </td>
@@ -383,7 +383,7 @@
                                                 </td>
 
                                                
-                                                <td class="DifferAlign" data-bs-toggle="modal" data-bs-target="#DataModal">
+                                                <td class="DifferAlign">
                                                     <p class="FirstLineP"> 24-1301-4004106-000100</p>
                                                     <div class="d-flex justify-content-end gap-1 gap-md-5 flex-wrap">
                                                         <div class="d-flex justify-content-end gap-1">
@@ -768,7 +768,23 @@
     <script src="../../scripts/Scripts.js"></script>
 
 
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var table = document.getElementById("table");
+            var rows = table.getElementsByTagName("tr");
+    
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+    
+                for (var j = 1; j < cells.length; j++) {
+                    cells[j].addEventListener("click", function () {
+                        var modal = new bootstrap.Modal(document.getElementById("DataModal"));
+                        modal.show();
+                    });
+                }
+            }
+        });
+    </script>
 
 
 
