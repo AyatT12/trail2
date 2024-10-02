@@ -329,24 +329,24 @@
                                                       </div>
                                                       <div class="mt-3 d-flex gap-3 align-items-center">
                                                         <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" id="email">
+                                                            <input class="form-check-input" type="radio" name="sendWay" value="email" id="email">
                                                             <label class="form-check-label" for="email">
                                                                 بريد
                                                             </label>
-                                                          </div>
-                                                          <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" id="whatsup" checked>
+                                                        </div>
+                                                        <div class="">
+                                                            <input class="form-check-input" type="radio" name="sendWay" value="whatsup" id="whatsup" >
                                                             <label class="form-check-label" for="whatsup">
                                                                 واتساب
                                                             </label>
-                                                          </div>
-                                                          <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" id="sms">
+                                                        </div>
+                                                        <div class="">
+                                                            <input class="form-check-input" type="radio" name="sendWay" value="sms" id="sms">
                                                             <label class="form-check-label" for="sms">
                                                                 رسالة نصية
                                                             </label>
-                                                          </div>
-                                                      </div>
+                                                        </div>
+                                                    </div>
                                                    </div>
                                             </div>
                                            </div>
@@ -645,6 +645,20 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../../scripts/Scripts.js"></script>
      <script src="../../../scripts/uploadPic.js"></script>
+     <script>
+        document.getElementById('sendContract').addEventListener('change', function() {
+            const sendWayOptions = document.querySelectorAll('input[name="sendWay"]');
+            
+            if (this.checked) {
+                document.getElementById('email').checked = true;
+            } else {
+                sendWayOptions.forEach(option => {
+                    option.checked = false;
+                });
+            }
+        });
+        </script>
+        
 
 </body>
 
