@@ -290,11 +290,11 @@
                                 <div class="col-md-6">
                                     <h3> اليومية </h3>
                                 </div>
-                               
+
                                 <div class="row g-2">
                                     <div class="col-lg-9 d-flex flex-column-reverse">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-md-3 custom-margin">
                                                 <div class="row">
                                                     <div class="col-auto">
                                                         <p> الرصيد </p>
@@ -304,7 +304,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <div class="col-auto">
                                                         <p> الرصيد المتاح </p>
@@ -314,7 +314,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-3">
                                                 <div class="row">
                                                     <div class="col-auto">
                                                         <p> الرصيد المحجوز </p>
@@ -327,7 +327,8 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-3 save-col">
-                                        <a href="" target="_blank" class="no-modal"> <img src="../../images/Frame 2608953.svg"> </a>
+                                        <a href="" target="_blank" class="DailyReport-icon"> <img
+                                                src="../../images/Frame 2608953.svg"> </a>
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="col-12 d-flex align-items-center Search-col  flex-wrap gap-2">
@@ -348,9 +349,8 @@
                                     <div class="col-lg-4 search-input-col">
                                         <div class="form-outline w-100" data-mdb-input-init>
                                             <span class="fa fa-search"></span>
-                                            <input type="search" id="search"
-                                                class="form-control inputs search-input" name="search"
-                                                aria-label="Search" autofocus autocomplete="off" />
+                                            <input type="search" id="search" class="form-control inputs search-input"
+                                                name="search" aria-label="Search" autofocus autocomplete="off" />
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -358,7 +358,7 @@
 
                                             <div class="col-lg-8">
                                                 <div class="row">
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-4">
                                                         <div class="row">
                                                             <div class="col-auto">
                                                                 <p> إجمالي الدائن </p>
@@ -383,276 +383,292 @@
                                             </div>
                                             <div class="col-lg-4 filters-col ">
                                                 <div class="filters-custom-order">
-    
+
                                                     <label class="form-check-label" for="all">الكل</label>
-                                                    <input class="form-check-input custom" type="radio"
-                                                        name="Options" id="all" value="All" checked />
+                                                    <input class="form-check-input custom" type="radio" name="Options"
+                                                        id="all" value="All" checked />
                                                 </div>
-    
+
                                                 <div class="filters-custom-order">
-    
-                                                    <label class="form-check-label filter2"
-                                                        for="Custody">عهدة</label>
-                                                    <input class="form-check-input custom" type="radio"
-                                                        name="Options" id="Custody" value="Custody" />
+
+                                                    <label class="form-check-label filter2" for="Custody">عهدة</label>
+                                                    <input class="form-check-input custom" type="radio" name="Options"
+                                                        id="Custody" value="Custody" />
                                                 </div>
-    
+
                                                 <div class="filters-custom-order">
-    
+
                                                     <label class="form-check-label  filter1"
                                                         for="detained">محجوز</label>
-                                                    <input class="form-check-input custom" type="radio"
-                                                        name="Options" id="detained" value="detained" />
+                                                    <input class="form-check-input custom" type="radio" name="Options"
+                                                        id="detained" value="detained" />
                                                 </div>
                                                 <div class="filters-custom-order">
-    
-                                                    <label class="form-check-label filter3"
-                                                        for="deported">مرحل</label>
-                                                    <input class="form-check-input custom" type="radio"
-                                                        name="Options" id="deported" value="deported" />
+
+                                                    <label class="form-check-label filter3" for="deported">مرحل</label>
+                                                    <input class="form-check-input custom" type="radio" name="Options"
+                                                        id="deported" value="deported" />
                                                 </div>
-    
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row table-row px-3">
-                                            <div
-                                                class="col  scroll-table-div scroll-extendreportTable-div table-responsive-sm  w-100  ">
-                                                <table class=" tables-style table table-borderless report-tables-style"
-                                                    id="table">
-                                                    <thead class="sticky-top">
-                                                        <tr>
-                                                            <th scope="col">سند</th>
-                                                            <th scope="col">الموظف</th>
-                                                            <th scope="col">مدين</th>
-                                                            <th scope="col">دائن</th>
-                                                            <th scope="col">طريقة الدفع </th>
-                                                            <th scope="col"> المرجع</th>
-                                                            <th scope="col"> الفرع</th>
-                                                            <th scope="col" class="DifferAlign"> القيد </th>
-                                                            <th></th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
+                                <div
+                                    class="col  scroll-table-div scroll-extendreportTable-div table-responsive-sm  w-100  ">
+                                    <table class=" tables-style table table-borderless report-tables-style" id="table">
+                                        <thead class="sticky-top">
+                                            <tr>
+                                                <th scope="col">سند</th>
+                                                <th scope="col">الموظف</th>
+                                                <th scope="col">مدين</th>
+                                                <th scope="col">دائن</th>
+                                                <th scope="col">طريقة الدفع </th>
+                                                <th scope="col"> المرجع</th>
+                                                <th scope="col"> الفرع</th>
+                                                <th scope="col" class="DifferAlign"> القيد </th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
 
-                                                        <tr >
-                                                            <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank" class="no-modal"><img
-                                                                        src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                            <tr>
+                                                <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf"
+                                                        target="_blank"><img src="../../images/Rectangle 196.svg"></a>
+                                                </td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
-                                                            <td class="DifferAlign" >
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter2-div"></div>
+                                                        <div class="filters filter2-div"></div>
 
-                                                                    <div>1</div>
+                                                        <div>1</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
-                                                        <tr >
-                                                            <td><a href="#" target="_blank" class="no-modal"><img
-                                                                        src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                            <tr>
+                                                <td><a href="#" target="_blank"><img
+                                                            src="../../images/Rectangle 196.svg"></a></td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter1-div"></div>
+                                                        <div class="filters filter1-div"></div>
 
-                                                                    <div>2</div>
+                                                        <div>2</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
+                                                    </div>
+                                                </td>
+                                            </tr>
 
-                                                        <tr >
-                                                            <td><a href="#" target="_blank" class="no-modal">
-                                                                <img src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                            <tr>
+                                                <td><a href="#" target="_blank">
+                                                        <img src="../../images/Rectangle 196.svg"></a></td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
 
-                                                            <td>
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter3-div"></div>
+                                                        <div class="filters filter3-div"></div>
 
-                                                                    <div>3</div>
+                                                        <div>3</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td><a href="#" target="_blank" class="no-modal"><img
-                                                                        src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" target="_blank"><img
+                                                            src="../../images/Rectangle 196.svg"></a></td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
 
-                                                            <td>
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter3-div"></div>
+                                                        <div class="filters filter3-div"></div>
 
-                                                                    <div>3</div>
+                                                        <div>3</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td><a href="#" target="_blank" class="no-modal"><img
-                                                                        src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" target="_blank"><img
+                                                            src="../../images/Rectangle 196.svg"></a></td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
 
-                                                            <td>
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter3-div"></div>
+                                                        <div class="filters filter3-div"></div>
 
-                                                                    <div>3</div>
+                                                        <div>3</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td><a href="#" target="_blank" class="no-modal"><img
-                                                                        src="../../images/Rectangle 196.svg"></a></td>
-                                                            <td>رامي عبدالحليم عثمان عماد</td>
-                                                            <td>0.00</td>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" target="_blank"><img
+                                                            src="../../images/Rectangle 196.svg"></a></td>
+                                                <td>رامي عبدالحليم عثمان عماد</td>
+                                                <td>0.00</td>
 
-                                                            <td>
-                                                                400.00
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> صندوق فرع الزهور</p>
-                                                                <p class="secondLineP">نقدًا</p>
-                                                            </td>
-                                                            <td class="DifferAlign">
-                                                                <p class="FirstLineP"> 24-1401-4004106-000079</p>
-                                                                <p class="secondLineP">إنشاء عقد </p>
-                                                            </td>
-                                                            <td>
-                                                                <p class="FirstLineP"> الزهور </p>
-                                                            </td>
+                                                <td>
+                                                    400.00
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> صندوق فرع الزهور</p>
+                                                    <p class="secondLineP">نقدًا</p>
+                                                </td>
+                                                <td class="DifferAlign">
+                                                    <p class="FirstLineP"> 24-1401-4004106-000079</p>
+                                                    <p class="secondLineP">إنشاء عقد </p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP"> الزهور </p>
+                                                </td>
 
-                                                            <td>
-                                                                <p class="FirstLineP"> 24-1301-4004106-000100</p>
-                                                                <p class="secondLineP">2024/06/30</p>
-                                                            </td>
-                                                            <td>
-                                                                <div class="filter-number-td">
+                                                <td>
+                                                    <p class="FirstLineP"> 24-1301-4004106-000100</p>
+                                                    <div class="d-flex justify-content-end gap-4">
+                                                        <p class="secondLineP">22/09/2024</p>
+                                                        <p class="secondLineP time"> 11:30 </p>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="filter-number-td">
 
-                                                                    <div class="filters filter3-div"></div>
+                                                        <div class="filters filter3-div"></div>
 
-                                                                    <div>3</div>
+                                                        <div>3</div>
 
-                                                                </div>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
 
-                                            </div>
+                                </div>
                             </div>
-                          </form>
+                        </form>
 
                         <a href="../../index.html" data-bs-toggle="tooltip" data-bs-placement="top"
                             data-bs-custom-class="custom-tooltip" data-bs-title="العودة الي الرئيسية"
@@ -890,110 +906,111 @@
 
         </div>
         <!-- Modal -->
-        <div class="modal fade" id="DataModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="DataModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header border-0">
-                        <h1 class="modal-title fs-5 w-100 text-center" id="DataModalLabel"> تفاصيل بيانات القيد </h1>
-                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+       <!-- <div class="modal fade" tabindex="-1" aria-labelledby="DataModal" aria-hidden="true" id="DataModal">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content reports-modal-content">
+                    <div class="modal-header flex-row-reverse border-0">
+                        <button type="button" class="modalClose" data-bs-dismiss="modal">&times;</button>
+
+                        <h5 class="modal-title card-title m-auto">بيانات تفاصيل القيد</h5>
                     </div>
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-md-11">
-                                <div class="DataCard">
+                    <div class="modal-body p-0">
+                        <div class="data-details">
+                            <div class="row ">
+                                <div class="col-auto ">
+                                    <p>رقم القيد</p>
+                                </div>
+                                <div class="col-auto Saved-data">
+                                    <p> 24-1301-4001101-000092 </p>
+                                </div>
+                            </div>
+
+
+                            <div class="row ">
+                                <div class="col-md-7 ">
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p>رقم القيد </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 24-1301-4004106-000100 </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto ">
+                                            <P>رقم الحساب </P>
                                         </div>
+                                        <div class="col-auto Saved-data">
+                                            <p>SA80004001100400001</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <P> البنك</P>
+                                        </div>
+                                        <div class="col-auto Saved-data">
+                                            <P> مصرف الإنماء </P>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-12 ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <p> رقم العهدة</P>
+                                        </div>
+                                        <div class="col-auto Saved-data">
+                                            <P>24-1304-4001101-000044 </P>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
 
 
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> رقم الحساب </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 23-1-60-5001-1020136 </p>
-                                                </div>
-                                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-7  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <p> المستلم</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> البنك </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> الرياض </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto Saved-data">
+                                            <P> عادل عبدالعزيز رائد</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> رقم العهدة </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 24-1304-4004106-000053 </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <P> تاريخ التسليم</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> نقطة البيع </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> صندوق فرع التاخي </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto Saved-data">
+                                            <p>2024/02/03</p>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> تاريخ التسليم </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 2024/07/06 </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 d-flex  flex-wrap">
+                                    <div class="row">
+                                        <div class="col-auto  text-end">
+                                            الملاحظات
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> المستلم </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> أحمد محمد عمر </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> الملاحظات </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> </p>
-                                                </div>
+                                        <div class="col-auto Saved-data ">
+                                            <div class="notes_box">
+                                                <p> ملاحظاات </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
+
             </div>
-        </div>
+        </div>  -->
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -1005,14 +1022,14 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../scripts/Scripts.js"></script>
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             var table = document.getElementById("table");
             var rows = table.getElementsByTagName("tr");
-    
+
             for (var i = 0; i < rows.length; i++) {
                 var cells = rows[i].getElementsByTagName("td");
-    
+
                 for (var j = 1; j < cells.length; j++) {
                     cells[j].addEventListener("click", function () {
                         var modal = new bootstrap.Modal(document.getElementById("DataModal"));
@@ -1021,8 +1038,8 @@
                 }
             }
         });
-    </script>
-    
+    </script> -->
+
 
 
 

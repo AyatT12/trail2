@@ -311,8 +311,10 @@
                                             <button type="submit" class="btn btn-standard"> عرض </button>
                                         </div>
                                     </div>
-                                    <div class="col-12">
+                                    <div class="col-lg-12">
                                         <div class="row">
+                                        <div class="col-lg-8 ">
+                                           <div class="row">
                                             <div class="col-md-4">
                                                 <div class="row">
                                                     <div class="col-auto">
@@ -323,7 +325,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-4">
                                                 <div class="row">
                                                     <div class="col-auto">
                                                         <p> إجمالى المدين</p>
@@ -333,7 +335,9 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 filters-col">
+                                           </div>
+                                        </div>
+                                            <div class="col-lg-4 filters-col">
                                                 <div class="filters-custom-order">
 
                                                     <label class="form-check-label" for="all">الكل</label>
@@ -378,9 +382,11 @@
                                     <table class=" tables-style table table-borderless report-tables-style" id="table">
                                         <thead class="sticky-top">
                                             <tr>
+                                                <th>السند</th>
                                                 <th scope="col" class="text-center">الرصيد السابق</th>
                                                 <th scope="col">مدين</th>
                                                 <th scope="col"> دائن </th>
+                                                <th scope="col"> طريقة الدفع </th>
                                                 <th scope="col"> المرجع </th>
                                                 <th scope="col"> الفرع</th>
                                                 <th scope="col" class="DifferAlign"> القيد </th>
@@ -389,8 +395,9 @@
                                         </thead>
                                         <tbody>
 
-                                            <tr data-bs-toggle="modal" data-bs-target="#DataModal">
-                                               
+                                            <tr>
+                                                <td><a href="http://system.ghyum.sa/images/Company/4004/Branches/106/Arabic%20Receipt/24-1301-4004106-000485.pdf" target="_blank"><img src="../../images/Rectangle 196.svg"></a></td>
+
                                                 <td class="text-center">
                                                     <p>0.00</p>
                                                 </td>
@@ -399,6 +406,10 @@
                                                 </td>
                                                 <td>
                                                     <p>850.50</p>
+                                                </td>
+                                                <td>
+                                                    <p class="FirstLineP">نقطة الهضبة الانماء</p>
+                                                    <p class="secondLineP"> امريكن اكسبرس </p>
                                                 </td>
                                                 <td>
                                                     <p class="FirstLineP">24-1401-4004106-000079</p>
@@ -673,121 +684,111 @@
 
 
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="DataModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="DataModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header border-0">
-                        <h1 class="modal-title fs-5 w-100 text-center" id="DataModalLabel"> تفاصيل بيانات القيد </h1>
-                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row justify-content-center">
-                            <div class="col-md-11">
-                                <div class="DataCard">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p>رقم القيد </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 24-1301-4004106-000100 </p>
-                                                </div>
-                                            </div>
-                                        </div>
+        <div class="modal fade" tabindex="-1" aria-labelledby="DataModal" aria-hidden="true" id="DataModal">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content reports-modal-content">
+                    <div class="modal-header flex-row-reverse border-0">
+                        <button type="button" class="modalClose" data-bs-dismiss="modal">&times;</button>
 
-                                
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> رقم الحساب </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 23-1-60-5001-1020136  </p>
-                                                </div>
-                                            </div>
+                        <h5 class="modal-title card-title m-auto">بيانات تفاصيل القيد</h5>
+                    </div>
+                    <div class="modal-body p-0">
+                        <div class="data-details">
+                            <div class="row ">
+                                <div class="col-auto ">
+                                    <p>رقم القيد</p>
+                                </div>
+                                <div class="col-auto Saved-data">
+                                    <p> 24-1301-4001101-000092 </p>
+                                </div>
+                            </div>
+
+
+                            <div class="row ">
+                                <div class="col-md-7 ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <P>رقم الحساب </P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p>  البنك  </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> الرياض  </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto Saved-data">
+                                            <p>SA80004001100400001</p>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> رقم العهدة  </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p> 24-1304-4004106-000053  </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <P> البنك</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> نقطة البيع </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p>  صندوق فرع التاخي </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto Saved-data">
+                                            <P> مصرف الإنماء </P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p>  طريقة الدفع </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p>  نقدًا </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-12 ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <p> رقم العهدة</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> تاريخ التسليم  </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p>  2024/07/06 </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-auto Saved-data">
+                                            <P>24-1304-4001101-000044 </P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> المستلم  </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p>  أحمد محمد عمر </p>
-                                                </div>
-                                            </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="row ">
+                                <div class="col-md-7  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <p> المستلم</P>
                                         </div>
-                                        <div class="col-md-12">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <p> الملاحظات  </p>
-                                                </div>
-                                                <div class=" col-md-auto Saved-data">
-                                                    <p>   </p>
-                                                </div>
+                                        <div class="col-auto Saved-data">
+                                            <P> عادل عبدالعزيز رائد</P>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-auto  ">
+                                    <div class="row">
+                                        <div class="col-auto ">
+                                            <P> تاريخ التسليم</P>
+                                        </div>
+                                        <div class="col-auto Saved-data">
+                                            <p>2024/02/03</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 d-flex  flex-wrap">
+                                    <div class="row">
+                                        <div class="col-auto  text-end">
+                                            الملاحظات
+                                        </div>
+                                        <div class="col-auto Saved-data ">
+                                            <div class="notes_box">
+                                                <p> ملاحظاات </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
-                  
                 </div>
+
             </div>
-        </div>
+        </div> 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -800,7 +801,23 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../scripts/Scripts.js"></script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var table = document.getElementById("table");
+            var rows = table.getElementsByTagName("tr");
 
+            for (var i = 0; i < rows.length; i++) {
+                var cells = rows[i].getElementsByTagName("td");
+
+                for (var j = 1; j < cells.length; j++) {
+                    cells[j].addEventListener("click", function () {
+                        var modal = new bootstrap.Modal(document.getElementById("DataModal"));
+                        modal.show();
+                    });
+                }
+            }
+        });
+    </script>
 
 
 
