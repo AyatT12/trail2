@@ -27,7 +27,8 @@
 body {
   background-color: var(--body-color);
   direction: rtl;
-  font-size: .9375rem;
+  font-size: .875rem;
+  /* letter-spacing: 0.28px; */
 }
 
 html {
@@ -241,14 +242,14 @@ html {
   border-collapse: separate;
   text-align: center;
   direction: ltr;
-  font-size: .9375rem;
+  font-size: .875rem;
   width: 100%;
 }
 
 .tables-style thead {
   text-align: center;
   direction: ltr;
-  font-size: .9375rem;
+  font-size: .875rem;
   width: 100%;
   box-shadow: 0px -20px 0px 0px #fefdfb;
   z-index: 2;
@@ -844,19 +845,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* /////////////////////////////////////////////////////////// */
-.dropdown-content {
-  background: #ffffff;
-  display: none;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px 0px #39629C3D;
-  width: 180px;
-  margin-top: 13px;
-  position: absolute;
-  z-index: 1;
-  /* background-color: white; */
-  font-size: 0.75rem;
-  padding: 2px;
-}
+
 
 .Branch-doc-td {
   position: relative;
@@ -866,6 +855,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   text-decoration: none;
   color: inherit;
 }
+.dropdown-content {
+  background: #ffffff;
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px #39629C3D;
+  width: 180px;
+  margin-top: 13px;
+  position: absolute;
+  z-index: 1;
+  font-size: 0.75rem;
+  padding: 2px;
+}
+
+.ExistFileData {
+  display: none;
+  right: -230px;
+  top: 65px;
+  margin: 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px 0px #39629C3D;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  font-size: 0.75rem;
+  padding: 2px;
+}
+
 
 /*  */
 @media (max-width : 1500px) {
@@ -1263,34 +1280,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* ================================================================================  reports  ======================================================================================= */
 /* ================================================================================================================================================================================== */
-/* .custom-date-input {
-  position: relative;
- 
+.DailyReport-icon{
+    box-shadow: 1px 1px 9px 0px #107c4236;
+    border-radius: 8px;
 }
-
-.custom-date-input::-webkit-calendar-picker-indicator {
-  opacity: 0; 
-}
-
-.custom-date-input::-moz-calendar-picker-indicator {
-  opacity: 0;
-}
-
-.custom-date-input:after {
-  content: url('../images/Frame\ \(7\).svg');
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none; 
-
-} */
 .secondLineP {
-  font-size: 12px;
+  font-size: .8rem;
 }
 
 .FirstLineP {
-  font-size: .9375rem;
+  font-size: .875rem;
 }
 
 .scroll-reportTable-div {
@@ -1376,6 +1375,50 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 8px;
     box-shadow: 0px 1px 4px 3px #FF96263D;
     font-size: 14px;
+}
+.custom-margin{
+  margin-left: 40px;
+}
+
+
+.reports-modal-content {
+  border: 3px solid #FF9626
+}
+
+.modalClose {
+  color: #FF9626;
+  padding: 0;
+    background-color: transparent;
+    border: 0;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+}
+.card-title{
+    text-shadow: 1px 4px 4px rgb(187 187 187 / 68%);
+    font-size: 1.2rem;
+    letter-spacing: 0.32px
+}
+.data-details {
+  border: 1px solid #39629C;
+  margin: 4px;
+  border-radius: 8px;
+  margin: 5px 20px 20px;
+  padding: 8px;
+  font-size: .75rem;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.pdf-icons{
+  width: 50px;
+  height: 50px;
+}
+.pdf-Tableicons{
+  width: 30px;
+  height: 30px;
 }
 
 /* ================================================================================  general media   ======================================================================================= */
