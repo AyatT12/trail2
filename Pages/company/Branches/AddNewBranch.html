@@ -101,8 +101,7 @@
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item"  href="../owners/owners.html"> الملاك <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">العقود <i
-                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                             
 
                                         </div>
                                     </div>
@@ -114,17 +113,22 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../../images/tenants.svg" class="icon" />
+                                            <img src="../../../images/tenants.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#tenant-items" aria-expanded="false"
+                                            aria-controls="#tenant-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#tenant-items" aria-expanded="false"
                                                 aria-controls="#tenant-items"> المستأجرين </span>
                                         </a>
                                     </li>
-                                    <div id="tenant-items" class="collapse">
+                                    <div id="tenant-items" class="collapse" >
                                         <div class="bg-white gap-3 collapse-inner rounded">
-
+                                            <a class="collapse-item" href="#"> بيانات المستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   عقود المستأجرين   <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> مديونات المستأجرين    <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+        
                                         </div>
-                                    </div>
+                                       </div>
                                     <li class="nav-link">
                                         <a>
                                               <img src="../../../images/employees.svg" class="icon"  data-bs-toggle="collapse" href="#employees-items" aria-expanded="false" aria-controls="#employees-items"/>
@@ -145,10 +149,21 @@
                                     </div>
                                     <li class="nav-link">
                                         <a href="#">
-                                            <img src="../../../images/accounts.svg" class="icon" />
-                                            <span class="text nav-text"> الحسابات </span>
+                                            <img src="../../../images/accounts.svg" class="icon" data-bs-toggle="collapse" href="#Accounts-items" aria-expanded="false" aria-controls="#Accounts-items"  />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse" href="#Accounts-items" aria-expanded="false" aria-controls="#Accounts-items" > الحسابات </span>
                                         </a>
                                     </li>
+                                    <div id="Accounts-items" class="collapse" >
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="#">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">  استلام عهدة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   تحويل إلى مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   تحويل من مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">    حساب الإقرار الضريبي  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                       </div>
+       
                                     <li class="nav-link">
                                         <a>
                                             <img src="../../../images/reports.svg" class="icon"  data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
@@ -620,7 +635,7 @@
                                 <main>
                                     <div class="accordion">
                                      
-                                      <div class="accordion-item">
+                                       <div class="accordion-item">
                                         <div class="accordion-item-header">
                                           <span class="accordion-item-header-title">  الشركة  </span>
                                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down accordion-item-header-icon">
@@ -630,30 +645,60 @@
                                         <div class="accordion-item-description-wrapper">
                                           <div class="accordion-item-description">
                                             <div class="container-fluid">
-                                                <div class="row collapse-row">
-                                                    <div class="col-5">
-                                                        <p>عقود</p>
+                                                <div class="row collapse-row ">
+                                                    <div class="col">
+                                                        <p>السجل التجاري</p>
                                                     </div>
-                                                    <div class="col working">
-                                                         <p> 3 </p>
-                                                    </div>
-                                                    <div class="col ended">
-                                                         <p> 5 </p>
+                                                   
+                                                    <div class="col-auto ended">
+                                                       <a href="#"> <img src="../../../images/Existing file.svg"></a>
                                                     </div>
                                                 </div>
                                                 <hr class="collapse-hr">
-                                                <div class="row collapse-row">
-                                                    <div class="col-5">
-                                                        <p>مستندات</p>
+
+                                                <div class="row collapse-row ">
+                                                    <div class="col">
+                                                        <p> اشتراك الغرفة التجارية </p>
                                                     </div>
-                                                    <div class="col working">
-                                                         <p> 100 </p>
-                                                    </div>
-                                                    <div class="col ended">
-                                                         <p> 200 </p>
+                                                   
+                                                    <div class="col-auto ended">
+                                                       <a href="#"> <img src="../../../images/file not exist.svg"></a>
                                                     </div>
                                                 </div>
-                                               
+                                                <hr class="collapse-hr">
+
+                                                <div class="row collapse-row ">
+                                                    <div class="col">
+                                                        <p> تصريح هيئة النقل </p>
+                                                    </div>
+                                                   
+                                                    <div class="col-auto ended">
+                                                       <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                    </div>
+                                                </div>
+                                                <hr class="collapse-hr">
+
+                                                <div class="row collapse-row ">
+                                                    <div class="col">
+                                                        <p>  رخصة البلدية   </p>
+                                                    </div>
+                                                   
+                                                    <div class="col-auto ended">
+                                                       <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                    </div>
+                                                </div>
+                                                <hr class="collapse-hr">
+
+                                                <div class="row collapse-row ">
+                                                    <div class="col">
+                                                        <p> البريد الوطني</p>
+                                                    </div>
+                                                   
+                                                    <div class="col-auto ended">
+                                                       <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                           </div>
                                         </div>

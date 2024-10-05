@@ -103,8 +103,7 @@
                                                 الفروع <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../company/owners/owners.html"> الملاك <i
                                                     class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">العقود <i
-                                                    class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                             
 
                                         </div>
                                     </div>
@@ -116,7 +115,9 @@
                                     </li>
                                     <li class="nav-link">
                                         <a>
-                                            <img src="../../../images/tenants.svg" class="icon" />
+                                            <img src="../../../images/tenants.svg" class="icon"  data-bs-toggle="collapse"
+                                            href="#tenant-items" aria-expanded="false"
+                                            aria-controls="#tenant-items"/>
                                             <span class="text nav-text collapsed" data-bs-toggle="collapse"
                                                 href="#tenant-items" aria-expanded="false"
                                                 aria-controls="#tenant-items"> المستأجرين </span>
@@ -124,7 +125,10 @@
                                     </li>
                                     <div id="tenant-items" class="collapse">
                                         <div class="bg-white gap-3 collapse-inner rounded">
-
+                                            
+                                            <a class="collapse-item" href="#"> بيانات المستأجرين  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   عقود المستأجرين   <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#"> مديونات المستأجرين    <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                         </div>
                                     </div>
                                     <li class="nav-link">
@@ -146,11 +150,25 @@
                                         </div>
                                     </div>
                                     <li class="nav-link">
-                                        <a href="#">
-                                            <img src="../../../images/accounts.svg" class="icon" />
-                                            <span class="text nav-text"> الحسابات </span>
+                                        <a>
+                                            <img src="../../../images/accounts.svg" class="icon" data-bs-toggle="collapse"
+                                            href="#Accounts-items" aria-expanded="false"
+                                            aria-controls="#Accounts-items" />
+                                            <span class="text nav-text collapsed" data-bs-toggle="collapse"
+                                            href="#Accounts-items" aria-expanded="false"
+                                            aria-controls="#Accounts-items"> الحسابات </span>
                                         </a>
                                     </li>
+                                    <div id="Accounts-items" class="collapse" >
+                                        <div class="bg-white gap-3 collapse-inner rounded">
+                                            <a class="collapse-item" href="#">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">  استلام عهدة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   تحويل إلى مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">   تحويل من مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="#">    حساب الإقرار الضريبي  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+
+                                        </div>
+                                       </div>
                                     <li class="nav-link">
                                         <a>
                                             <img src="../../../images/reports.svg" class="icon"   data-bs-toggle="collapse" href="#reports-items" aria-expanded="false" aria-controls="#reports-items"/>
@@ -340,233 +358,261 @@
                     </div>
                     </form>
                 </div>
-            </div>
-            <div class="col-auto sidebar2-col close2">
-                <nav class="sidebar2 close2">
-                    <div class="toggle-div toggle2">
-                        <span class="notification"> إشعارات </span>
-                    </div>
-                    <div class="menu-bar">
-                        <div class="menu">
-                            <main>
-                                <div class="accordion">
-
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-header">
-                                            <span class="accordion-item-header-title"> الشركة </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down accordion-item-header-icon">
-                                                <path d="m6 9 6 6 6-6" />
-                                            </svg>
-                                        </div>
-                                        <div class="accordion-item-description-wrapper">
-                                            <div class="accordion-item-description">
-                                                <div class="container-fluid">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>عقود</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 3 </p>
-                                                        </div>
-                                                        <div class="col ended">
-                                                            <p> 5 </p>
-                                                        </div>
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>مستندات</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 100 </p>
-                                                        </div>
-                                                        <div class="col ended">
-                                                            <p> 200 </p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-header">
-                                            <span class="accordion-item-header-title"> السيارات </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down accordion-item-header-icon">
-                                                <path d="m6 9 6 6 6-6" />
-                                            </svg>
-                                        </div>
-                                        <div class="accordion-item-description-wrapper">
-                                            <div class="accordion-item-description">
-                                                <div class="container-fluid">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>وثائق</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 3 </p>
-                                                        </div>
-                                                        <div class="col ended">
-                                                            <p> 5 </p>
-                                                        </div>
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>صيانة</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 100 </p>
-                                                        </div>
-                                                        <div class="col ended">
-                                                            <p> 200 </p>
-                                                        </div>
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>اسعار</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 460 </p>
-                                                        </div>
-                                                        <div class="col ended">
-                                                            <p> 500 </p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-header">
-                                            <span class="accordion-item-header-title"> العقود </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down accordion-item-header-icon">
-                                                <path d="m6 9 6 6 6-6" />
-                                            </svg>
-                                        </div>
-                                        <div class="accordion-item-description-wrapper">
-                                            <div class="accordion-item-description">
-                                                <div class="container-fluid">
-                                                    <div class="row collapse-row">
-                                                        <div class="col ">
-                                                            <p> منتهية </p>
-                                                        </div>
-                                                        <div class="col contract-ended ">
-                                                            <p> 8 </p>
-                                                        </div>
-
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col">
-                                                            <p>تنتهي اليوم</p>
-                                                        </div>
-
-                                                        <div class="col ended">
-                                                            <p> 15 </p>
-                                                        </div>
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col">
-                                                            <p>تنتهي غدًا</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 7 </p>
-                                                        </div>
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col">
-                                                            <p> تنتهي لاحقًا </p>
-                                                        </div>
-                                                        <div class="col later">
-                                                            <p> 11 </p>
-                                                        </div>
-
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>محفوظة</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 5 </p>
-                                                        </div>
-
-                                                    </div>
-                                                    <hr class="collapse-hr">
-                                                    <div class="row collapse-row">
-                                                        <div class="col-5">
-                                                            <p>معلقة</p>
-                                                        </div>
-                                                        <div class="col working">
-                                                            <p> 100 </p>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <div class="accordion-item-header">
-                                            <span class="accordion-item-header-title"> الموظفين <div class="notify">
-                                                </div></span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-chevron-down accordion-item-header-icon">
-                                                <path d="m6 9 6 6 6-6" />
-                                            </svg>
-                                        </div>
-                                        <div class="accordion-item-description-wrapper">
-                                            <div class="accordion-item-description">
-                                                <div class="container-fluid">
-                                                    <div class="row align-items-center ">
-                                                        <div class="col-auto"> <img
-                                                                src="../../../images/arrow icon.svg" /> </div>
-                                                        <div class="col-auto p-1"> <img
-                                                                src="../../../images/arabic-man_21730-4132.avif"
-                                                                class="employee-custody-img"> عمار عبدالغفور مسفر
-                                                        </div>
-                                                        <div class="col-auto">37.068.12</div>
-                                                    </div>
-                                                    <hr>
-                                                    <div class="row align-items-center mb-2">
-                                                        <div class="col-auto"> <img
-                                                                src="../../../images/red arrow icon.svg" /></div>
-                                                        <div class="col-auto p-1"> <img
-                                                                src="../../../images/arabic-man_21730-4132.avif"
-                                                                class="employee-custody-img"> عمار عبدالغفور مسفر
-                                                        </div>
-                                                        <div class="col-auto">37.068.12</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </main>
+                <div class="col-auto sidebar2-col close2">
+                    <nav class="sidebar2 close2">
+                        <div class="toggle-div toggle2">
+                            <span class="notification"> إشعارات </span>
                         </div>
-
-
-                    </div>
-
-                </nav>
-
+                        <div class="menu-bar">
+                            <div class="menu">
+                                <main>
+                                    <div class="accordion">
+            
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                              <span class="accordion-item-header-title">  الشركة  </span>
+                                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                <path d="m6 9 6 6 6-6" />
+                                              </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                              <div class="accordion-item-description">
+                                                <div class="container-fluid">
+                                                    <div class="row collapse-row ">
+                                                        <div class="col">
+                                                            <p>السجل التجاري</p>
+                                                        </div>
+                                                       
+                                                        <div class="col-auto ended">
+                                                           <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="collapse-hr">
+            
+                                                    <div class="row collapse-row ">
+                                                        <div class="col">
+                                                            <p> اشتراك الغرفة التجارية </p>
+                                                        </div>
+                                                       
+                                                        <div class="col-auto ended">
+                                                           <a href="#"> <img src="../../../images/file not exist.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="collapse-hr">
+            
+                                                    <div class="row collapse-row ">
+                                                        <div class="col">
+                                                            <p> تصريح هيئة النقل </p>
+                                                        </div>
+                                                       
+                                                        <div class="col-auto ended">
+                                                           <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="collapse-hr">
+            
+                                                    <div class="row collapse-row ">
+                                                        <div class="col">
+                                                            <p>  رخصة البلدية   </p>
+                                                        </div>
+                                                       
+                                                        <div class="col-auto ended">
+                                                           <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                        </div>
+                                                    </div>
+                                                    <hr class="collapse-hr">
+            
+                                                    <div class="row collapse-row ">
+                                                        <div class="col">
+                                                            <p> البريد الوطني</p>
+                                                        </div>
+                                                       
+                                                        <div class="col-auto ended">
+                                                           <a href="#"> <img src="../../../images/Existing file.svg"></a>
+                                                        </div>
+                                                    </div>
+            
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> السيارات </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>وثائق</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 3 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 5 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>صيانة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 100 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 200 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>اسعار</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 460 </p>
+                                                            </div>
+                                                            <div class="col ended">
+                                                                <p> 500 </p>
+                                                            </div>
+                                                        </div>
+            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> العقود </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row collapse-row">
+                                                            <div class="col ">
+                                                                <p> منتهية </p>
+                                                            </div>
+                                                            <div class="col contract-ended ">
+                                                                <p> 8 </p>
+                                                            </div>
+            
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p>تنتهي اليوم</p>
+                                                            </div>
+            
+                                                            <div class="col ended">
+                                                                <p> 15 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p>تنتهي غدًا</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 7 </p>
+                                                            </div>
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col">
+                                                                <p> تنتهي لاحقًا </p>
+                                                            </div>
+                                                            <div class="col later">
+                                                                <p> 11 </p>
+                                                            </div>
+            
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>محفوظة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 5 </p>
+                                                            </div>
+            
+                                                        </div>
+                                                        <hr class="collapse-hr">
+                                                        <div class="row collapse-row">
+                                                            <div class="col-5">
+                                                                <p>معلقة</p>
+                                                            </div>
+                                                            <div class="col working">
+                                                                <p> 100 </p>
+                                                            </div>
+            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <div class="accordion-item-header">
+                                                <span class="accordion-item-header-title"> الموظفين <div class="notify"></div>
+                                                </span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    class="lucide lucide-chevron-down accordion-item-header-icon">
+                                                    <path d="m6 9 6 6 6-6" />
+                                                </svg>
+                                            </div>
+                                            <div class="accordion-item-description-wrapper">
+                                                <div class="accordion-item-description">
+                                                    <div class="container-fluid">
+                                                        <div class="row align-items-center ">
+                                                            <div class="col-auto"> <img src="../../../images/arrow icon.svg" />
+                                                            </div>
+                                                            <div class="col-auto p-1"> <img
+                                                                    src="../../../images/arabic-man_21730-4132.avif"
+                                                                    class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                            </div>
+                                                            <div class="col-auto">37.068.12</div>
+                                                        </div>
+                                                        <hr>
+                                                        <div class="row align-items-center mb-2">
+                                                            <div class="col-auto"> <img src="../../../images/red arrow icon.svg" />
+                                                            </div>
+                                                            <div class="col-auto p-1"> <img
+                                                                    src="../../../images/arabic-man_21730-4132.avif"
+                                                                    class="employee-custody-img"> عمار عبدالغفور مسفر
+                                                            </div>
+                                                            <div class="col-auto">37.068.12</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                            </div>
+            
+            
+                        </div>
+            
+                    </nav>
+            
+                </div>
             </div>
+            
         </div>
 
     </div>
