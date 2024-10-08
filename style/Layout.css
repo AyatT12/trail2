@@ -654,10 +654,13 @@ body.dark .sidebar li a:hover .text {
 .working{
   color: var(--main-color);
   text-align: end;
+  font-size: 12px;
+
 }
 .ended{
   color :var(--notify-color);
   text-align: end;
+  font-size: 12px;
 }
 .later{
   color :var(--primary-color);
