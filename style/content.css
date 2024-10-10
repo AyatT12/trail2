@@ -1429,6 +1429,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .active-stat-btn{
   color: var(--primary-color) !important;
 }
+.stat-btn{
+  padding-right: 0;
+}
 .stat-btn:hover{
 background-color: #DAE3F1
 }
