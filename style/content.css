@@ -1427,7 +1427,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-weight: 600;
 }
 .active-stat-btn{
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 .stat-btn:hover{
 background-color: #DAE3F1
@@ -1439,7 +1439,7 @@ background-color: #DAE3F1
 }
 @media(min-width : 991px){
   #myChart{
-     max-height: 50vh;
+    max-height: 400px;
   }
 }
 /* ================================================================================  general media   ======================================================================================= */
