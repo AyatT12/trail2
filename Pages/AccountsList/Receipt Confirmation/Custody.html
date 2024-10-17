@@ -176,9 +176,9 @@
                                         <div class="bg-white gap-3 collapse-inner rounded">
                                             <a class="collapse-item" href="../../../Pages/AccountsList/CashFeeding/Feed Box.html">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item active" href="../../../Pages/AccountsList/Receipt Confirmation/Custody.html">  استلام عهدة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">   تحويل إلى مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">   تحويل من مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">    حساب الإقرار الضريبي  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/Money to tenant/Money to tenant.html">  مبالغ إلى مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/Money from  tenant/Money from tenant.html">   مبالغ من مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/Tax return/Tax returns.html">   الإقرار الضريبي <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
 
                                         </div>
@@ -327,7 +327,12 @@
                                         <input class="form-check-input custom" type="radio" name="Options" id="all"
                                             value="All" checked />
                                     </div>
+                                    <div class="filters-custom-order">
 
+                                        <label class="form-check-label  filter1" for="Running">تحت الإجراء</label>
+                                        <input class="form-check-input custom" type="radio" name="Options" id="Running"
+                                            value="Running" />
+                                    </div>
                                     <div class="filters-custom-order">
 
                                         <label class="form-check-label filter2" for="Accepted">مقبول</label>
@@ -335,12 +340,7 @@
                                             value="Accepted" />
                                     </div>
 
-                                    <div class="filters-custom-order">
-
-                                        <label class="form-check-label  filter1" for="Running">تحت الإجراء</label>
-                                        <input class="form-check-input custom" type="radio" name="Options" id="Running"
-                                            value="Running" />
-                                    </div>
+                                  
                                     <div class="filters-custom-order">
 
                                         <label class="form-check-label filter3" for="rejected">مرفوض</label>
@@ -352,10 +352,10 @@
                             </div>
                             <div class="row table-row px-3">
                                 <div class="col  scroll-table-div  table-responsive-sm  w-100  ">
-                                    <table class=" tables-style table table-borderless " id="Branches-table">
+                                    <table class=" tables-style table table-borderless " id="table">
                                         <thead class="sticky-top">
                                             <tr>
-                                                <th scope="col" class="DifferAlign"> الموظف </th>
+                                                <th scope="col" class="DifferAlign"> مستلم العهدة </th>
                                                 <th scope="col">تاريخ الاستلام</th>
                                                 <th scope="col"> مُسلِّم العهدة </th>
                                                 <th scope="col"> مدين</th>
@@ -391,9 +391,7 @@
                                        </tr>
                                        <tr>
                                         <td class="DifferAlign">
-                                            <p class="FirstLineP" > محسن عبدالمجيد ناصر الحارثي</p>
-                                            <p class="secondLineP"> :  ملاحظات </p> 
-                                            <span class="secondLineP"> </span>
+                                           
                                         </td>
                                         <td>20/07/2024</td>
                                         <td>موفق رجب هاني موفق</td>
@@ -686,7 +684,7 @@
                                                     <div class="container-fluid">
                                                         <div class="row align-items-center ">
                                                             <div class="col-auto"> <img
-                                                                    src="../../../images/arrow icon.svg" /> </div>
+                                                                    src="../../../images/arrow icon (2).svg" /> </div>
                                                             <div class="col-auto p-1"> <img
                                                                     src="../../../images/arabic-man_21730-4132.avif"
                                                                     class="employee-custody-img"> عمار عبدالغفور مسفر
@@ -696,7 +694,7 @@
                                                         <hr>
                                                         <div class="row align-items-center mb-2">
                                                             <div class="col-auto"> <img
-                                                                    src="../../../images/red arrow icon.svg" /></div>
+                                                                    src="../../../images/red arrow icon (2).svg" /></div>
                                                             <div class="col-auto p-1"> <img
                                                                     src="../../../images/arabic-man_21730-4132.avif"
                                                                     class="employee-custody-img"> عمار عبدالغفور مسفر
@@ -768,20 +766,36 @@
     <script src="../../../scripts/Scripts.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            var table = document.getElementById("Branches-table");
+            var table = document.getElementById("table");
             var rows = table.getElementsByTagName("tr");
-
+    
             for (var i = 0; i < rows.length; i++) {
                 var cells = rows[i].getElementsByTagName("td");
-
-                for (var j = 1; j < cells.length; j++) {
-                    cells[j].addEventListener("click", function () {
-                        window.location.href = "Custody Receipt.html";
-                    });
+                let accepted = false; 
+    
+                if (cells.length > 0) {
+                    var lastTd = cells[cells.length-7];
+    
+                    if (lastTd && lastTd.innerHTML.trim() !== "") {
+                        accepted = true;
+                        console.log(lastTd.innerHTML)
+                    }
+    
+                    for (var j = 0; j < cells.length; j++) {
+                        cells[j].addEventListener("click", function () {
+                            if (accepted) {
+                                window.location.href = "Custody Receipt.html";
+                            } else {
+                                window.location.href = "Custody NotReceived.html";
+                            }
+                        });
+                    }
                 }
             }
         });
     </script>
+    
+    
 
 
 

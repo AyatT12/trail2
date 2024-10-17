@@ -158,13 +158,13 @@
                                             aria-controls="#Accounts-items"> الحسابات </span>
                                         </a>
                                     </li>
-                                    <div id="Accounts-items" class="collapse" >
+                                     <div id="Accounts-items" class="collapse" >
                                         <div class="bg-white gap-3 collapse-inner rounded">
                                             <a class="collapse-item" href="../../../Pages/AccountsList/CashFeeding/Feed Box.html">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../../Pages/AccountsList/Receipt Confirmation/Custody.html">  استلام عهدة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">   تحويل إلى مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">   تحويل من مستأجر <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
-                                            <a class="collapse-item" href="#">    حساب الإقرار الضريبي  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/Money to tenant/Money to tenant.html">  مبالغ إلى مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/Money from  tenant/Money from tenant.html">   مبالغ من مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item " href="../../../Pages/AccountsList/Tax return/Tax returns.html">   الإقرار الضريبي <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
 
                                         </div>
                                        </div>
@@ -288,22 +288,14 @@
                                                             <div class="container-fluid Update-data-scroll-container">
                                                                 <div class="row">
                                                                     <div class="col-md-6">
-                                                                        <div class="row">
-                                                                            <div class="col-auto">
-                                                                                <p> الرقم الحكومي</p>
-                                                                            </div>
-                                                                            <div class=" col-md-auto Saved-data">
-                                                                                <p>7004004001</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="row">
-                                                                            <div class="col-auto">
-                                                                                <p> الرقم الضريبي</p>
-                                                                            </div>
-                                                                            <div class=" col-md-auto Saved-data">
-                                                                                <p>800400041004100</p>
+                                                                        <label for="Branch-number-rental-system"
+                                                                            class="form-label">  رقم الفرع بنظام التأجير </label>
+                                                                        <input type="text" id="Branch-number-rental-system"
+                                                                            class="form-control inputs arabic-input"
+                                                                            name="Branch-number-rental-system" required>
+                                                                        <div class="invaild">
+                                                                            <div class="invalid-feedback">
+                                                                                الحقل مطلوب
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -864,7 +856,7 @@
                                           <div class="accordion-item-description">
                                             <div class="container-fluid">
                                                 <div class="row align-items-center ">
-                                                    <div class="col-auto"> <img src="../../../images/arrow icon.svg"/> </div>
+                                                    <div class="col-auto"> <img src="../../../images/arrow icon (2).svg"/> </div>
                                                     <div class="col-auto p-1"> <img
                                                             src="../../../images/arabic-man_21730-4132.avif"
                                                             class="employee-custody-img"> عمار عبدالغفور مسفر
@@ -873,7 +865,7 @@
                                                 </div>
                                                 <hr>
                                                 <div class="row align-items-center mb-2">
-                                                    <div class="col-auto"> <img src="../../../images/red arrow icon.svg"/></div>
+                                                    <div class="col-auto"> <img src="../../../images/red arrow icon (2).svg"/></div>
                                                     <div class="col-auto p-1"> <img
                                                             src="../../../images/arabic-man_21730-4132.avif"
                                                             class="employee-custody-img"> عمار عبدالغفور مسفر
@@ -1028,8 +1020,8 @@
             const data = {
                 "phone1": "0123456789",
                 "phone2": "0987654321",
-                "managerNameAr": "علي عبد العال محمد ",
-                "managerNameEn": "ali abdelaal mohamed ahmed",
+                "managerNameAr": "فهد ناصر الدوسري",
+                "managerNameEn": "Fahd Nasser Eldosary",
                 "streetNameAr": "شارع الملك",
                 "streetNameEn": "King Street",
                 "districtNameAr": "الحي الشرقي",
@@ -1038,12 +1030,14 @@
                 "unitNumber": "45",
                 "zipCode": "54321",
                 "additionalNumber": "6789",
+                "BranchNumberRentalSystem" :"80040041004100",
                 "notes": 'ملاحظات الفرع',
                 "Signature": '../../../images/signature_29.png'
             };
 
             document.getElementById("phone1").value = data.phone1;
             document.getElementById("phone2").value = data.phone2;
+            document.getElementById("Branch-number-rental-system").value = data.BranchNumberRentalSystem;
             document.getElementById("manager-name-ar").value = data.managerNameAr;
             document.getElementById("manager-name-en").value = data.managerNameEn;
             document.getElementById("street-name-ar").value = data.streetNameAr;
