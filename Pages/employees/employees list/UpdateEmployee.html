@@ -248,7 +248,7 @@
                 </div>
                 <div class="col my-2 d-flex align-items-center justify-content-center">
                     <div class="container NewUpdate-container">
-                        <form action="" class="needs-validation" novalidate>
+                        <form action="" class="needs-validation" novalidate id="myForm">
                             <div class="row">
                                 
                                 <div class="row justify-content-center">
@@ -260,13 +260,12 @@
                                             <div class="col-md-6 save-col">
                                                 <button type="button" class="custom-img-btn"> <img
                                                     src="../../../images/Frame (5).svg" /></button>
-                                                <button type="submit" class="custom-img-btn"> <img
-                                                        src="../../../images/save.svg" /></button>
                                                 <button type="button" class="custom-img-btn" id="stop-active-button">  <img id="stop-active-icon"
                                                         src="../../../images/stop.svg" /></button>
                                                 <button type="button" class="custom-img-btn" id="delete-recycle-button"> <img id="delete-recycle-icon"
                                                         src="../../../images/delete (2).svg" /></button>
-                                                      
+                                                        <button type="submit" class="custom-img-btn"> <img
+                                                            src="../../../images/save.svg" /></button>
                                                 <a href="employees.html"><img src="../../../images/Chevron_Left.svg" /></a>
                                             </div>
                                         </div>
@@ -292,28 +291,7 @@
                                                             <hr class="accordion-items-hr">
 
                                                             <div class="container-fluid">
-                                                                <div class="row">
-                                                                    <div class="col-md-6">
-                                                                        <div class="row">
-                                                                            <div class="col-auto">
-                                                                                <p> رقم الموظف </p>
-                                                                            </div>
-                                                                            <div class=" col-md-auto Saved-data">
-                                                                                <p> 401 </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="row">
-                                                                            <div class="col-auto">
-                                                                                <p> الهوية </p>
-                                                                            </div>
-                                                                            <div class=" col-md-auto Saved-data">
-                                                                                <p>6548816823054</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                               
                                                                 <div class="row">
                                                                     <div class="col-md-6">
                                                                         <label for="JobTitle-ar"
@@ -341,7 +319,28 @@
                                                                     </div>
 
                                                                 </div>
-                                                           
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="row">
+                                                                            <div class="col-auto">
+                                                                                <p> رقم الموظف </p>
+                                                                            </div>
+                                                                            <div class=" col-md-auto Saved-data">
+                                                                                <p> 401 </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <div class="row">
+                                                                            <div class="col-auto">
+                                                                                <p> الهوية </p>
+                                                                            </div>
+                                                                            <div class=" col-md-auto Saved-data">
+                                                                                <p>6548816823054</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                              
                                                                 <div class="row">
 
@@ -422,11 +421,12 @@
                                                                         <input type="number" id="Creditlimit"
                                                                             class="form-control inputs"
                                                                             name="Creditlimit" maxlength="100"  required>
-                                                                        <div class="invaild">
-                                                                            <div class="invalid-feedback">
-                                                                                الحقل مطلوب
+                                                                            <div class="invaild">
+                                                                                <div class="invalid-feedback zero-feedback">
+                                                                                    الحقل مطلوب و أكبر من 0
+                                                                                </div>
+                                                                             
                                                                             </div>
-                                                                        </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <label for="Daily-limit" class="form-label w-100">الحد اليومي</label>
@@ -865,7 +865,8 @@
                 "email": "ABC@gmail.com",
                 "notes": 'ملاحظات الفرع',
                 "Creditlimit": '7000.000',
-                "Dailylimit" : "5"
+                "Dailylimit" : "5",
+                "ManagementAuthority" : true
             };
             document.getElementById("Creditlimit").value = data.Creditlimit;
             document.getElementById("JobTitle-en").value = data.JobTitleEN;
@@ -874,6 +875,7 @@
             document.getElementById("email").value = data.email;
             document.getElementById("Daily-limit").value = data.Dailylimit;
             document.querySelector('textarea[name="notes"]').value = data.notes;
+            document.getElementById("ManagementAuthority").checked = data.ManagementAuthority;
 
         });
        
@@ -995,7 +997,41 @@
         number.value = parseInt(number.value) - step;
     });
 </script>
+<script>
+    const feedAmountInput = document.getElementById("Creditlimit");
+    const zeroFeedback = document.querySelector('.zero-feedback');
+    const form = document.getElementById("myForm");
 
+    function isInvalidAmount(value) {
+        const trimmedValue = value.trim();
+
+        if (trimmedValue === '' || isNaN(trimmedValue) || parseFloat(trimmedValue) === 0 || /^0\d+$/.test(trimmedValue) ||trimmedValue <0) {
+            return true;
+        }
+        return false;
+    }
+
+    feedAmountInput.addEventListener("input", function () {
+        const feedAmountValue = feedAmountInput.value;
+
+        if (isInvalidAmount(feedAmountValue)) {
+            zeroFeedback.style.display = "block";
+            feedAmountInput.classList.add('is-invalid');
+        } else {
+            zeroFeedback.style.display = "none";
+            feedAmountInput.classList.remove('is-invalid');
+        }
+    });
+
+    form.addEventListener("submit", function (event) {
+        const feedAmountValue = feedAmountInput.value;
+
+        if (isInvalidAmount(feedAmountValue)) {
+            event.preventDefault();
+           
+        }
+    });
+</script>
 </body>
 
 </html>

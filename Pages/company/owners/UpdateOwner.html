@@ -300,7 +300,7 @@
                                                     <div class="input-group">
                                                         <input type="tel"
                                                             class="form-control inputs tel-input"
-                                                            id="phone2" name="phone2" required>
+                                                            id="phone2" name="phone2" >
                                                         <select
                                                             class="input-group-text select-style counterCode"
                                                             name="counterCode-phone2">
@@ -316,6 +316,7 @@
                                                     </div>
                                                    
                                                 </div>
+
                                                 <div class="col-md-6">
 
                                                     <button type="button" class="btn modal-btn"
@@ -333,39 +334,42 @@
                                                 </div>
                                             </div>
                                           </div>
-                                           <div class="col-md-12">
+                                          <div class="col-md-12">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="d-flex gap-3 align-items-center">
-                                                    
-                                                        <input class="form-check-input checkbox" type="checkbox" value="checked" id="sendContract" name="sendContract">
-                                                        <label class="form-check-label" for="sendContract">
-                                                            ارسال العقد
-                                                        </label>
-                                                    </div>
-                                                    <div class="mt-3 d-flex gap-3 align-items-center">
-                                                        <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" value="email" id="email">
-                                                            <label class="form-check-label" for="email">
-                                                                بريد
-                                                            </label>
-                                                        </div>
-                                                        <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" value="whatsup" id="whatsup" >
-                                                            <label class="form-check-label" for="whatsup">
-                                                                واتساب
-                                                            </label>
-                                                        </div>
-                                                        <div class="">
-                                                            <input class="form-check-input" type="radio" name="sendWay" value="sms" id="sms">
-                                                            <label class="form-check-label" for="sms">
-                                                                رسالة نصية
-                                                            </label>
+                                                    <label for="email"
+                                                        class="form-label"> البريد الإلكتروني </label>
+                                                    <input type="email" id="email"
+                                                        class="form-control inputs english-input"
+                                                        name="email" >
+                                                    <div class="invaild">
+                                                        <div class="invalid-feedback">
+                                                            يرجى إدخال بريد إلكتروني صحيح.
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                           </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex gap-3 align-items-center">
+                                                <input class="form-check-input checkbox" type="checkbox" value="checked" id="sendContract" name="sendContract" >
+                                                <label class="form-check-label" for="sendContract">ارسال العقد</label>
+                                            </div>
+                                            <div class="mt-3 d-flex gap-3 align-items-center">
+                                                <div>
+                                                    <input class="form-check-input" type="radio" name="sendWay" value="email" id="sendEmail">
+                                                    <label class="form-check-label" for="sendEmail">بريد</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="radio" name="sendWay" value="whatsup" id="sendWhatsup">
+                                                    <label class="form-check-label" for="sendWhatsup">واتساب</label>
+                                                </div>
+                                                <div>
+                                                    <input class="form-check-input" type="radio" name="sendWay" value="sms" id="sendSms">
+                                                    <label class="form-check-label" for="sendSms">رسالة نصية</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                             <div class="col-md-12">
                                                 <div class="row align-items-center mt-3 ">
                                                     <div class="col-md-10">
@@ -741,6 +745,52 @@
                 });
             }
         });
+        </script>
+          <script>
+            const phone2Input = document.getElementById("phone2");
+            const emailInput = document.getElementById("email");
+            const sendContractCheckbox = document.getElementById("sendContract");
+            const sendEmailRadio = document.getElementById("sendEmail");
+            const sendWhatsupRadio = document.getElementById("sendWhatsup");
+            const sendSmsRadio = document.getElementById("sendSms");
+        
+            function updateFormState() {
+                const isPhone2Empty = phone2Input.value.trim() === "";
+                const isEmailEmpty = emailInput.value.trim() === "";
+        
+                sendContractCheckbox.disabled = isPhone2Empty && isEmailEmpty;
+        
+                const isCheckboxChecked = sendContractCheckbox.checked;
+                const radiosDisabled = sendContractCheckbox.disabled || !isCheckboxChecked;
+        
+                sendEmailRadio.disabled = radiosDisabled;
+                sendWhatsupRadio.disabled = radiosDisabled;
+                sendSmsRadio.disabled = radiosDisabled;
+        
+                if (!isEmailEmpty) {
+                    sendEmailRadio.disabled = false;
+                    sendWhatsupRadio.disabled = true;
+                    sendSmsRadio.disabled = true;
+                }
+        
+                if (!isPhone2Empty) {
+                    sendWhatsupRadio.disabled = false;
+                    sendSmsRadio.disabled = false;
+                    sendEmailRadio.disabled = true;
+                }
+        
+                if (!isEmailEmpty && !isPhone2Empty) {
+                    sendEmailRadio.disabled = false;
+                    sendWhatsupRadio.disabled = false;
+                    sendSmsRadio.disabled = false;
+                }
+            }
+        
+            phone2Input.addEventListener("input", updateFormState);
+            emailInput.addEventListener("input", updateFormState);
+            sendContractCheckbox.addEventListener("change", updateFormState);
+        
+            updateFormState();
         </script>
 </body>
 

@@ -248,7 +248,7 @@
                 </div>
                 <div class="col my-2 d-flex align-items-center justify-content-center">
                     <div class="container NewUpdate-container">
-                        <form action="" class="needs-validation" novalidate>
+                        <form action="" class="needs-validation" novalidate id="myForm">
                             <div class="row">
                                
                                 <div class="row justify-content-center">
@@ -292,11 +292,13 @@
                                             <input type="text" id="FeedAmount"
                                                 class="form-control inputs arabic-input"
                                                 name="FeedAmount" maxlength="30"  required>
-                                            <div class="invaild">
-                                                <div class="invalid-feedback">
-                                                    الحقل مطلوب
+                                                <div class="invaild">
+                                                    <div class="invalid-feedback zero-feedback">
+                                                        الحقل مطلوب و أكبر من 0
+                                                    </div>
+                                                 
+                                                   
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="row align-items-center ">
@@ -699,7 +701,41 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../../scripts/Scripts.js"></script>
-
+    <script>
+        const feedAmountInput = document.getElementById("FeedAmount");
+        const zeroFeedback = document.querySelector('.zero-feedback');
+        const form = document.getElementById("myForm");
+    
+        function isInvalidAmount(value) {
+            const trimmedValue = value.trim();
+    
+            if (trimmedValue === '' || isNaN(trimmedValue) || parseFloat(trimmedValue) === 0 || /^0\d+$/.test(trimmedValue) ||trimmedValue <0) {
+                return true;
+            }
+            return false;
+        }
+    
+        feedAmountInput.addEventListener("input", function () {
+            const feedAmountValue = feedAmountInput.value;
+    
+            if (isInvalidAmount(feedAmountValue)) {
+                zeroFeedback.style.display = "block";
+                feedAmountInput.classList.add('is-invalid');
+            } else {
+                zeroFeedback.style.display = "none";
+                feedAmountInput.classList.remove('is-invalid');
+            }
+        });
+    
+        form.addEventListener("submit", function (event) {
+            const feedAmountValue = feedAmountInput.value;
+    
+            if (isInvalidAmount(feedAmountValue)) {
+                event.preventDefault();
+               
+            }
+        });
+    </script>
 
 </body>
 

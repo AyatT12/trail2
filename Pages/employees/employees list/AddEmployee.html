@@ -246,7 +246,7 @@
                 </div>
                 <div class="col my-2 d-flex align-items-center justify-content-center">
                     <div class="container NewUpdate-container">
-                        <form action="" class="needs-validation" novalidate>
+                        <form action="" class="needs-validation" novalidate id="myForm">
                             <div class="row mt-3 g-3">
                                
                                 <div class="row justify-content-center">
@@ -436,12 +436,13 @@
                                                                         <label for="Creditlimit" class="form-label">الحد الائتماني</label>
                                                                         <input type="number" id="Creditlimit"
                                                                             class="form-control inputs"
-                                                                            name="Creditlimit" maxlength="100"  required>
-                                                                        <div class="invaild">
-                                                                            <div class="invalid-feedback">
-                                                                                الحقل مطلوب
+                                                                            name="Creditlimit" maxlength="100" min="0"  required>
+                                                                            <div class="invaild">
+                                                                                <div class="invalid-feedback zero-feedback">
+                                                                                    الحقل مطلوب و أكبر من 0
+                                                                                </div>
+                                                                             
                                                                             </div>
-                                                                        </div>
                                                                     </div>
                                                                     <div class="col-md-6">
                                                                         <label for="Daily-limit" class="form-label w-100">الحد اليومي</label>
@@ -493,8 +494,8 @@
                                                                 <div class="row">
                                                                     <div class="d-flex gap-3 align-items-center">
                                                        
-                                                                        <input class="form-check-input checkbox" type="checkbox" value="checked" id="ManagementAuthority" name="ManagementAuthority">
-                                                                        <label class="form-check-label" for="ManagementAuthority">
+                                                                        <input class="form-check-input checkbox" type="checkbox" value="checked" id="ManagementAuthority" name="ManagementAuthority" checked >
+                                                                        <label class="form-check-label" for="ManagementAuthority" >
                                                                             صلاحية الإدارة
                                                                         </label>
                                                                       </div>
@@ -924,6 +925,41 @@
         deincrement.style.backgroundImage = "url('../../../images/down.svg')";
         increment.style.backgroundImage = "url('../../../images/up.svg')";
         number.value = parseInt(number.value) - step;
+    });
+</script>
+<script>
+    const feedAmountInput = document.getElementById("Creditlimit");
+    const zeroFeedback = document.querySelector('.zero-feedback');
+    const form = document.getElementById("myForm");
+
+    function isInvalidAmount(value) {
+        const trimmedValue = value.trim();
+
+        if (trimmedValue === '' || isNaN(trimmedValue) || parseFloat(trimmedValue) === 0 || /^0\d+$/.test(trimmedValue) ||trimmedValue <0) {
+            return true;
+        }
+        return false;
+    }
+
+    feedAmountInput.addEventListener("input", function () {
+        const feedAmountValue = feedAmountInput.value;
+
+        if (isInvalidAmount(feedAmountValue)) {
+            zeroFeedback.style.display = "block";
+            feedAmountInput.classList.add('is-invalid');
+        } else {
+            zeroFeedback.style.display = "none";
+            feedAmountInput.classList.remove('is-invalid');
+        }
+    });
+
+    form.addEventListener("submit", function (event) {
+        const feedAmountValue = feedAmountInput.value;
+
+        if (isInvalidAmount(feedAmountValue)) {
+            event.preventDefault();
+           
+        }
     });
 </script>
 </body>
