@@ -33,6 +33,8 @@ body {
 .navbar{
   background-color: #ffce94;
   z-index: 9;
+  position: sticky;
+  top: 0;
 }
 .navbar-nav .dropdown-menu{
     position: absolute;
