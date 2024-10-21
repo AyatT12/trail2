@@ -1024,17 +1024,31 @@
         });
     </script>
 <script>
-   document.addEventListener("DOMContentLoaded", function () {
+  function updateSystemsCheckBackground() {
+    const systemsCheck = document.querySelector('.systems-check');
+    const IDuploadContainer = document.querySelector(".Doc-upload-container");
+
+    if (IDuploadContainer && systemsCheck) {
+        if (IDuploadContainer.querySelector("img")) {
+            systemsCheck.style.backgroundColor = "green";
+        } else {
+            systemsCheck.style.backgroundColor = "red"; // Reset background if no image
+        }
+    } 
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    updateSystemsCheckBackground(); // Update on page load
     const selectElement = document.getElementById('doc');
     const form = document.getElementById('docsForm');
     const DocImg = document.getElementById('Doc-upload-container');
-    
+
     let selectedValue = selectElement.value; 
+    updateSystemsCheckBackground();
 
     if (selectedValue === "السجل التجاري") {
-
         DocImg.innerHTML = `<img class="preview-image" src="../../../images/Commercial Register.png">`;
-        form.innerHTML = `<div class="row mt-3"><div class="col-md-6"><div class="row"><div class="col-auto"><p> رقم المستند </p></div><div class="col"><p class="Saved-data"> 400410010010 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> تاريخه</p></div><div class="col"><p class="Saved-data"> 2023/02/01  </p></div></div></div></div><div class="row"><div class="col-md-6"><div class="row"><div class="col-auto"><p> بدايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> نهايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01</p></div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal"><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`;
+        form.innerHTML = `<div class="row mt-3"><div class="col-md-6"><div class="row"><div class="col-auto"><p> رقم المستند </p></div><div class="col"><p class="Saved-data"> 400410010010 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> تاريخه</p></div><div class="col"><p class="Saved-data"> 2023/02/01  </p></div></div></div></div><div class="row"><div class="col-md-6"><div class="row"><div class="col-auto"><p> بدايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> نهايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01</p></div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal"><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`
     }
 
     selectElement.addEventListener('change', function () {
@@ -1042,15 +1056,15 @@
 
         if (selectedValue === "السجل التجاري") {
             DocImg.innerHTML = `<img class="preview-image" src="../../../images/Commercial Register.png">`;
-            form.innerHTML = `<div class="row mt-3"><div class="col-md-6"><div class="row"><div class="col-auto"><p> رقم المستند </p></div><div class="col"><p class="Saved-data"> 400410010010 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> تاريخه</p></div><div class="col"><p class="Saved-data"> 2023/02/01  </p></div></div></div></div><div class="row"><div class="col-md-6"><div class="row"><div class="col-auto"><p> بدايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> نهايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01</p></div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal"><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`;
+            form.innerHTML = `<div class="row mt-3"><div class="col-md-6"><div class="row"><div class="col-auto"><p> رقم المستند </p></div><div class="col"><p class="Saved-data"> 400410010010 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> تاريخه</p></div><div class="col"><p class="Saved-data"> 2023/02/01  </p></div></div></div></div><div class="row"><div class="col-md-6"><div class="row"><div class="col-auto"><p> بدايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01 </p></div></div></div><div class="col-md-6"><div class="row"><div class="col-auto"><p> نهايته </p></div><div class="col"><p class="Saved-data"> 2023/02/01</p></div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal"><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`
         } else {
-            DocImg.innerHTML = `<img class="preview-image" src="">`;
-            form.innerHTML = `<div class="row mt-2"><div class="col-md-6"><label for="Doc-number" class="form-label"> رقم المستند </label><input type="text" maxlength="50" id="Doc-number" class="form-control inputs" name="Doc-number" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="Doc-Date" class="form-label"> تاريخه </label><input type="date" id="Doc-Date" class="form-control inputs custom-date-input" name="Doc-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row"><div class="col-md-6"><label for="start-Date" class="form-label"> بدايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="start-Date" class="form-label"> نهايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal" ><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`;
+            DocImg.innerHTML = ``;
+            form.innerHTML = `<div class="row mt-2"><div class="col-md-6"><label for="Doc-number" class="form-label"> رقم المستند </label><input type="text" maxlength="50" id="Doc-number" class="form-control inputs" name="Doc-number" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="Doc-Date" class="form-label"> تاريخه </label><input type="date" id="Doc-Date" class="form-control inputs custom-date-input" name="Doc-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row"><div class="col-md-6"><label for="start-Date" class="form-label"> بدايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="start-Date" class="form-label"> نهايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal" ><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`        }
 
-        }
+        // Call the function to update the background color based on the new content
+        updateSystemsCheckBackground();
     });
 });
-
 
     </script>
   <script src="../../../scripts/uploadPic.js"></script>
