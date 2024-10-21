@@ -254,7 +254,7 @@
                                         <div class="col-md-6 save-col">
                                             <button type="submit" class="custom-img-btn"> <img
                                                     src="../../../images/save.svg" /></button>
-                                            <a href="Money to tenant.html"><img src="../../../images/Chevron_Left.svg" /></a>
+                                            <a href="Money to tenant.html"><img class="Chevron" src="../../../images/Chevron_Left.svg" /></a>
                                         </div>
                                        </div>
                                        <div class="container-fluid">
@@ -348,7 +348,7 @@
                                           <div class="row align-items-center " id="hidden-row" style="display: none;">
                                               <div class="col-md-6">
                                                   <div class="row">
-                                                      <div class="col-auto">
+                                                      <div class="col-12">
                                                           <p> رقم الحساب  </p>
                                                       </div>
                                                       <div class=" col-md-auto Saved-data">
@@ -359,7 +359,7 @@
                                               </div>
                                                  <div class="col-md-6">
                                                   <div class="row">
-                                                      <div class="col-auto">
+                                                      <div class="col-12">
                                                           <p> البنك   </p>
                                                       </div>
                                                       <div class=" col-md-auto Saved-data">
@@ -373,7 +373,7 @@
                                             <div class="row align-items-center">
                                                 <div class="col">
                                                     <div class="row">
-                                                        <div class="col-auto">
+                                                        <div class="col-12">
                                                             <p> المستأجر   </p>
                                                         </div>
                                                         <div class=" col-md-auto Saved-data">
@@ -385,7 +385,43 @@
                                                   
                                             </div>
                                            </div>
-                                          
+                                          <div class="col-md-12">
+                                            <div class="row" id="hidden-row2" style="display: none;">
+                                                <div class="col-md-6 ">
+                                                    <label for="to-account"
+                                                        class="form-label"> إلى حساب </label>
+                                                    <input type="text" id="to-account"
+                                                        class="form-control inputs "
+                                                        name="to-account" required>
+                                                        <div class="invaild">
+                                                            <div class="invalid-feedback zero-feedback">
+                                                                الحقل مطلوب 
+                                                            </div>
+                                                         
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="row">
+                                                        <div class="col-md-12 ">
+                                                            <label for="Bank" class="form-label"> البنك </label>
+                                                            <select class="form-select select-style " name="Bank"
+                                                                id="Bank" required>
+                                                                <option> </option>
+
+                                                                <option value=""> مصرف الانماء</option>
+        
+                                                            </select>
+                                                            <div class="invaild">
+                                                                <div class="invalid-feedback">
+                                                                    الحقل مطلوب
+                                                                </div>
+                                                            </div>
+                                                        </div>
+        
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                          </div>
                                           
                                          <div class="col-md-12">
                                           <div class="row ">
@@ -710,13 +746,18 @@
         document.getElementById('payment-method').addEventListener('change', function() {
         const paymentMethod = this.value;
         const hiddenRow = document.getElementById('hidden-row');
+        const hiddenRow2 = document.getElementById('hidden-row2');
         const salePoint = document.getElementById('salePoint');
         
         if (paymentMethod === 'transfer') {
             hiddenRow.style.display = 'flex'; 
+            hiddenRow2.style.display = 'flex'; 
+
             salePoint.value = 'point1'; 
         } else {
             hiddenRow.style.display = 'none'; 
+            hiddenRow2.style.display = 'none'; 
+
             salePoint.value = 'point2'; 
         }
     });

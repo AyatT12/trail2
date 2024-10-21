@@ -3,6 +3,8 @@
 const body = document.querySelector("body"),
  sidebar = body.querySelector(".sidebar"),
  mainPageIcon = document.querySelector(".main-page-icon"),
+ newPageIcon = document.querySelector(".new-Page-icon"),
+
  sidebar2 = body.querySelector(".sidebar2");
  const sidebar1Col = document.querySelector(".sidebar1-col");
  const sidebar2Col = document.querySelector(".sidebar2-col");
@@ -43,15 +45,18 @@ toggles1.forEach(({ toggle, sidebarToToggle, sidebarToClose}) => {
       sidebar1Col.classList.toggle("close");
       sidebarToClose.classList.add("close2");
       sidebar2Col.classList.add("close2");
-      if (window.innerWidth > 1500) {
+      if (window.innerWidth > 1700) {
         
       if (mainPageIcon) {
         if (sidebarToToggle.classList.contains("close")) {
           mainPageIcon.style.left = ""; 
-          mainPageIcon.style.bottom = ""; 
+          mainPageIcon.style.bottom = "";
+          newPageIcon.style.bottom = ""; 
+          newPageIcon.style.left = ""; 
+ 
         } else {
-          mainPageIcon.style.left = "-60px";
-          mainPageIcon.style.bottom = "60px";
+          newPageIcon.style.left = "-60px";
+          newPageIcon.style.bottom = "60px";
         }
       }
       }
@@ -76,7 +81,7 @@ toggles2.forEach(({ toggle, sidebarToToggle, sidebarToClose }) => {
       sidebarToClose.classList.add("close");
       sidebar1Col.classList.add("close");
 
-      if (window.innerWidth > 1500) {
+      if (window.innerWidth > 1700) {
         
         if (mainPageIcon) {
           if (sidebarToToggle.classList.contains("close2")) {
@@ -101,14 +106,19 @@ sidebar.addEventListener("mouseenter", function () {
   sidebar2.classList.add("close2");
   sidebar2Col.classList.add("close2");
 
-  if (window.innerWidth > 1500) {
+  if (window.innerWidth > 1700) {
     if (mainPageIcon) {
       if (sidebar.classList.contains("close")) {
         mainPageIcon.style.left = ""; 
         mainPageIcon.style.bottom = ""; 
+        newPageIcon.style.bottom = "";
+        newPageIcon.style.left = "";
       } else {
-        mainPageIcon.style.left = "-60px";
-        mainPageIcon.style.bottom = "60px";
+        // newPageIcon.style.left = "-60px";
+        newPageIcon.style.bottom = "60px";
+        mainPageIcon.style.left = "-60px"; 
+        mainPageIcon.style.bottom = "";
+
       }
     }
   }
@@ -132,13 +142,20 @@ sidebar.addEventListener('mouseleave', function () {
     sidebar1Col.classList.add("close");
     sidebar.classList.remove("close2");
 
-    if (window.innerWidth > 1500 && mainPageIcon) {
+    if (window.innerWidth > 1700 && mainPageIcon) {
       if (sidebar.classList.contains("close")) {
         mainPageIcon.style.left = ""; 
         mainPageIcon.style.bottom = ""; 
+        newPageIcon.style.bottom = "";
+        newPageIcon.style.left = "";
+
+
       } else {
         mainPageIcon.style.left = "-60px";
         mainPageIcon.style.bottom = "60px";
+        newPageIcon.style.bottom = "60px";
+        newPageIcon.style.left = "-60px";
+
       }
     }
   }, 300); 

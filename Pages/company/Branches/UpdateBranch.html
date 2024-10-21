@@ -160,8 +160,9 @@
                                     </li>
                                      <div id="Accounts-items" class="collapse" >
                                         <div class="bg-white gap-3 collapse-inner rounded">
-                                            <a class="collapse-item" href="../../../Pages/AccountsList/CashFeeding/Feed Box.html">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                          <a class="collapse-item" href="../../../Pages/AccountsList/CashFeeding/Feed Box.html">   تغذية الصندوق <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../../Pages/AccountsList/Receipt Confirmation/Custody.html">  استلام عهدة  <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
+                                            <a class="collapse-item" href="../../../Pages/AccountsList/closePendingContracts.html"> إغلاق العقود المعلقة <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../../Pages/AccountsList/Money to tenant/Money to tenant.html">  مبالغ إلى مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item" href="../../../Pages/AccountsList/Money from  tenant/Money from tenant.html">   مبالغ من مستأجر<i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
                                             <a class="collapse-item " href="../../../Pages/AccountsList/Tax return/Tax returns.html">   الإقرار الضريبي <i class="fa-solid fa-arrow-left inner-collapse-arrow"></i></a>
@@ -264,7 +265,7 @@
                                                 src="../../../images/stop.svg" /></button>
                                         <button type="button" class="custom-img-btn"> <img
                                                 src="../../../images/delete (2).svg" /></button>
-                                        <a href="Branches.html"><img src="../../../images/Chevron_Left.svg" /></a>
+                                        <a href="Branches.html"><img class="Chevron" src="../../../images/Chevron_Left.svg" /></a>
                                     </div>
                                   </div>
                                         <main class="mt-4 g-3">
@@ -292,7 +293,7 @@
                                                                         <label for="Branch-number-rental-system"
                                                                             class="form-label">  رقم الفرع بنظام التأجير </label>
                                                                         <input type="text" id="Branch-number-rental-system"
-                                                                            class="form-control inputs arabic-input"
+                                                                            class="form-control inputs "
                                                                             name="Branch-number-rental-system" required>
                                                                         <div class="invaild">
                                                                             <div class="invalid-feedback">
@@ -573,7 +574,7 @@
                                                                                         <option value="البريد الوطني">البريد الوطني</option>
                                                                                     </select>
                                                                                 </div>
-                                                                                <div class="col-md-6 col-lg-8 text-start">
+                                                                                <div class="col-md-6 col-lg-8 doc-save-align" >
                                                                                     <button type="submit" class="custom-img-btn">
                                                                                         <img type="button" src="../../../images/save (3).svg">
                                                                                     </button>
@@ -1061,7 +1062,6 @@ document.addEventListener("DOMContentLoaded", function () {
             DocImg.innerHTML = ``;
             form.innerHTML = `<div class="row mt-2"><div class="col-md-6"><label for="Doc-number" class="form-label"> رقم المستند </label><input type="text" maxlength="50" id="Doc-number" class="form-control inputs" name="Doc-number" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="Doc-Date" class="form-label"> تاريخه </label><input type="date" id="Doc-Date" class="form-control inputs custom-date-input" name="Doc-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row"><div class="col-md-6"><label for="start-Date" class="form-label"> بدايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div><div class="col-md-6"><label for="start-Date" class="form-label"> نهايته </label><input type="date" id="start-Date" class="form-control inputs custom-date-input" name="start-Date" required><div class="invaild"><div class="invalid-feedback"> الحقل مطلوب </div></div></div></div><div class="row align-items-end g-3"><div class="col"><label>ملاحظات</label><textarea class="form-control textarea-inputs" rows="1" maxlength="100" name="notes" type="text"></textarea></div><div class="col-md-auto text-start"><button type="button" class="btn modal-btn" data-bs-toggle="modal" href="#Doc-photo-modal" ><div class="row align-items-center"><div class="col">صورة المستند</div><div class="col-auto"><div class="systems-check"><i class="fa-solid fa-check text-white"></i></div></div></div></button></div></div>`        }
 
-        // Call the function to update the background color based on the new content
         updateSystemsCheckBackground();
     });
 });

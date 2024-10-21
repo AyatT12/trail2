@@ -98,12 +98,32 @@ direction: ltr;
     right : -60px;
     left: auto;
 }
+.ExistFileData{
+    right: auto;
+    left: -280px;
+}
+.dropdown-content{
+    width: 255px;
+}
+.ExistFileData{
+    width: 230px;
+}
+.data-container{
+    text-align: right;
+}
+.Chevron{
+    transform: rotateY(180deg);
+}
+.doc-save-align{
+    text-align: end;
+}
 @media (max-width : 1600px) {
     .new-Branch{
       right: 0px;
       left: auto;
     }
 }
+
 
 /* ================================================================================  inputs   ======================================================================================= */
 .counterCode {

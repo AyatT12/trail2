@@ -686,9 +686,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .new-Page-icon {
-
+  transition: left 0.3s ease, bottom 0.3s ease;
   position: absolute;
-  bottom: 0px;
+  bottom: -8px;
   left: -60px;
 }
 
@@ -700,7 +700,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .main-page-icon {
   position: absolute;
   left: -120px;
-  bottom: 0;
+  bottom: -8px;
   transition: left 0.3s ease, bottom 0.3s ease;
 
 }
@@ -726,7 +726,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .systems-check,
-.systems-check2 {
+.systems-check-license {
   height: 25px;
   width: 25px;
   background-color: red;
@@ -777,24 +777,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
-/* Licence modal */
-.Doc2-btn-card {
+/* License photo modal */
+.License-btn-card {
   cursor: pointer;
   box-shadow: 1px 0.5px 8px 0px #FF962633;
   border-radius: 8px;
 }
 
-.Doc2-photo-modal-content {
+.License-photo-modal-content {
   width: 300px;
 }
 
-.Doc2-photo-modal-body {
+.License-photo-modal-body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Doc2-Card {
+.License-Card {
   position: relative;
   width: 230px;
   height: 250px;
@@ -805,10 +805,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 150, 38, 0.08);
-  cursor: url(img/pen.jpg)
+  cursor: url(img/pen.jpg);
 }
 
-.Doc2-upload-container {
+.upload-container,
+.License-upload-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -835,7 +836,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #removeIDImg,
-#removeIDImg2 {
+#removeLicenseImg {
   position: absolute;
   top: 5px;
   left: 10px;
@@ -843,20 +844,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #videoElement,
-#videoElement2 {
+#videoLicenseElement {
 
   width: 100%;
   height: 100%;
 }
 
 #photo,
-#photo2 {
+#licensePhoto {
   width: 100%;
 }
 
 /* /////////////////////////////////////////////////////////// */
 
-
+.data-container{
+  text-align: left;
+}
+.doc-save-align{
+  text-align: start;
+}
 .Branch-doc-td {
   position: relative;
 }
@@ -895,14 +901,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 /*  */
-@media (max-width : 1500px) {
+@media (max-width : 1700px) {
   .new-Page-icon {
     left: 0px;
+    bottom: 60px;
+
   }
 
   .main-page-icon {
     left: 0px;
-    bottom: 60px;
+    bottom: 0px;
   }
 
 }
@@ -1508,14 +1516,14 @@ background-color: #DAE3F1
   .new-Page-icon {
     position: sticky;
     right: 100%;
-    bottom: 90px;
+    bottom: 18%;
     z-index: 9;
   }
 
   .main-page-icon {
     position: sticky;
     left: 0px;
-    bottom: 40px;
+    bottom: 10%;
     right: 100%;
     z-index: 9;
   }
