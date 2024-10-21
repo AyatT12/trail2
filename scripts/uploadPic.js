@@ -7,18 +7,22 @@ const openCameraButton = document.getElementById('openCamera');
 let saveIDBtn = null;
 var imgeURL;
 
-// Function to update systems-check background
 function updateSystemsCheckBackground() {
-    if (IDuploadContainer.querySelector("img")) {
-        systemsCheck.style.backgroundColor = "green";
+    const systemsCheck = document.querySelector('.systems-check');
+    const IDuploadContainer = document.querySelector(".Doc-upload-container");
+
+    if (IDuploadContainer && systemsCheck) {
+        if (IDuploadContainer.querySelector("img")) {
+            systemsCheck.style.backgroundColor = "green";
+        } else {
+            systemsCheck.style.backgroundColor = ""; 
+        }
     } else {
-        systemsCheck.style.backgroundColor = ""; // Reset background if no image
+        console.log("IDuploadContainer or systemsCheck not found");
     }
 }
-
-// Check if there's already an image on page load
 document.addEventListener("DOMContentLoaded", function () {
-    updateSystemsCheckBackground(); // Update on page load
+        updateSystemsCheckBackground();   
 });
 
 // Image Upload
