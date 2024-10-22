@@ -430,3 +430,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   window.addEventListener('resize', adjustSidebarsHeight);
 });
+// //********************************************************************** number inputs script prevent entering negitive values ********************************************************************************** */
+document.querySelectorAll('input[type="number"]').forEach(function(input) {
+  input.addEventListener('keydown', function(event) {
+    if (event.key === '-' || event.keyCode === 189) {
+      event.preventDefault();
+    }
+  });
+});
+// //********************************************************************** email inputs script prevent entering arabic values ********************************************************************************** */
+document.querySelectorAll('input[type="email"]').forEach(function(input) {
+  input.addEventListener('input', function() {
+    this.value = this.value.replace(/[\u0600-\u06FF]/g, '');
+  });
+});
