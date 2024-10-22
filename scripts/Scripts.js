@@ -444,3 +444,74 @@ document.querySelectorAll('input[type="email"]').forEach(function(input) {
     this.value = this.value.replace(/[\u0600-\u06FF]/g, '');
   });
 });
+
+// //********************************************************************** language direction change ********************************************************************************** */
+document.addEventListener('DOMContentLoaded', function () {
+  // Load the CSS file once when the project is opened (if it's not in localStorage)
+  if (!localStorage.getItem('cssFile3')) {
+    fetch('../../style/english.css') // Use an absolute path or root-relative path
+      .then(response => response.text())
+      .then(cssContent => {
+        // Store the CSS content in localStorage
+        localStorage.setItem('cssFile3', cssContent);
+      })
+      .catch(error => {
+        console.error('Error loading CSS file:', error);
+      });
+  }
+
+  // Set up checkbox and label logic
+  const checkbox = document.getElementById('myCheckbox');
+  const label2 = document.getElementById('checkboxLabel');
+  
+  // Check if CSS was already applied based on localStorage state
+  const isChecked = localStorage.getItem('customCSS') === 'true';
+  checkbox.checked = isChecked;
+  updateLabelAndCSS(isChecked);
+
+  // Handle label click to simulate checkbox toggle
+  label2.addEventListener('click', function () {
+    checkbox.click();
+  });
+
+  // Handle checkbox changes
+  checkbox.addEventListener('change', function () {
+    const isChecked = checkbox.checked;
+    localStorage.setItem('customCSS', isChecked ? 'true' : 'false');
+    updateLabelAndCSS(isChecked);
+  });
+
+  function updateLabelAndCSS(isChecked) {
+    if (isChecked) {
+      label2.innerHTML = 'Ar';
+      addCSS();
+    } else {
+      label2.innerHTML = 'En';
+      removeCSS();
+    }
+  }
+
+  function addCSS() {
+    // Retrieve the CSS content from localStorage and inject it
+    const cssContent = localStorage.getItem('cssFile3');
+    if (cssContent) {
+      const style = document.createElement('style');
+      style.id = 'customCSS';
+      style.innerHTML = cssContent;
+      document.head.appendChild(style);
+    }
+  }
+
+  function removeCSS() {
+    // Remove the injected CSS from the document
+    const existingStyle = document.getElementById('customCSS');
+    if (existingStyle) {
+      existingStyle.remove();
+    }
+  }
+
+  // On page load, apply the CSS if it's stored
+  if (isChecked) {
+    addCSS();
+  }
+});

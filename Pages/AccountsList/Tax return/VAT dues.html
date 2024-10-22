@@ -66,7 +66,10 @@
                     <div class="d-flex align-items-center" style="gap:15px">
                         <!-- <img src="../../../images/Frame 2608795.svg" class=" sms nav-icon" style="width: 28;height: 28px;" />
                         <img src="../../../images/whatsup.svg" class=" whatsup nav-icon" /> -->
-                        <h5 class="m-0 nav-icon">En</h5>
+                        <div class="col lang-button-col">
+                            <input type="checkbox" id="myCheckbox" class="d-none">
+                            <h5 for="myCheckbox" class="lang-button m-2" id="checkboxLabel"> En </h5>
+                        </div>
 
                     </div>
 
@@ -294,8 +297,8 @@
                                                             <select class="form-select select-style " name="finance-year"
                                                                 id="finance-year" required>
                                                                 <option> </option>
-                                                                <option value=""> السنة الاولي </option>
-                                                                <option value="">   السنة الثانية </option>
+                                                                <option value="first-year"> السنة الاولي </option>
+                                                                <option value="second-year">   السنة الثانية </option>
         
                                                             </select>
                                                             <div class="invaild">
@@ -315,8 +318,8 @@
                                                             <select class="form-select select-style " name="qurter"
                                                                 id="qurter" required>
                                                                 <option> </option>
-                                                                <option value=""> الثالث </option>
-                                                                <option value="">   الرابع </option>
+                                                                <option value="third"> الثالث </option>
+                                                                <option value="fourth">   الرابع </option>
         
                                                             </select>
                                                             <div class="invaild">
@@ -339,7 +342,7 @@
                                                       <div class="col-12">
                                                           <p>عدد الفواتير </p>
                                                       </div>
-                                                      <div class=" col-md-auto Saved-data">
+                                                      <div class=" col-md-auto Saved-data hidden-data">
                                                           <p> 300 </p>
                                                       </div>
                                                   </div>
@@ -350,7 +353,7 @@
                                                       <div class="col-12">
                                                           <p> المبيعات الخاضعة للنسبة الأساسية    </p>
                                                       </div>
-                                                      <div class=" col-md-auto Saved-data">
+                                                      <div class=" col-md-auto Saved-data hidden-data">
                                                           <p> 1,522,895,21 </p>
                                                       </div>
                                                   </div>
@@ -364,7 +367,7 @@
                                                         <div class="col-12">
                                                             <p>نسبة القيمة المضافة  </p>
                                                         </div>
-                                                        <div class=" col-md-auto Saved-data">
+                                                        <div class=" col-md-auto Saved-data hidden-data">
                                                             <p> 10% </p>
                                                         </div>
                                                     </div>
@@ -375,7 +378,7 @@
                                                         <div class="col-12">
                                                             <p> مبلغ القيمة المضافة   </p>
                                                         </div>
-                                                        <div class=" col-md-auto Saved-data">
+                                                        <div class=" col-md-auto Saved-data hidden-data">
                                                             <p> 212,507.69 </p>
                                                         </div>
                                                     </div>
@@ -702,7 +705,31 @@
 
                 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
                 <script src="../../../scripts/Scripts.js"></script>
+                <script>
+                    const financeYearSelect = document.getElementById('finance-year');
+                    const quarterSelect = document.getElementById('qurter');
+                    const hiddenDataElements = document.querySelectorAll('.hidden-data');
+                
 
+                    function checkSelection() {
+                        const isFinanceYearSelected = financeYearSelect.value !== '';
+                        const isQuarterSelected = quarterSelect.value !== '';
+                
+                        if (isFinanceYearSelected && isQuarterSelected) {
+                            hiddenDataElements.forEach(element => {
+                                element.classList.remove('hidden-data');
+                            });
+                        } else {
+                            hiddenDataElements.forEach(element => {
+                                element.classList.add('hidden-data');
+                            });
+                        }
+                    }
+                
+                    financeYearSelect.addEventListener('change', checkSelection);
+                    quarterSelect.addEventListener('change', checkSelection);
+                </script>
+                
 </body>
 
 </html>

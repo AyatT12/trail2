@@ -13,8 +13,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="../../../style/Layout.css">
-    <link rel="stylesheet" href="../../../style/content.css">
-    <!-- <link rel="stylesheet" href="../../../style/english.css"> -->
+    <link rel="stylesheet" href="../../../style/content.css">    <!-- <link rel="stylesheet" href="../../../style/english.css"> --> 
 
 </head>
 
@@ -66,7 +65,10 @@
                     <div class="d-flex align-items-center" style="gap:15px">
                         <!-- <img src="../../../images/Frame 2608795.svg" class=" sms nav-icon" style="width: 28;height: 28px;" />
                         <img src="../../../images/whatsup.svg" class=" whatsup nav-icon" /> -->
-                        <h5 class="m-0 nav-icon">En</h5>
+                        <div class="col lang-button-col">
+                            <input type="checkbox" id="myCheckbox" class="d-none">
+                            <h5 for="myCheckbox" class="lang-button m-2" id="checkboxLabel"> En </h5>
+                        </div>
 
                     </div>
 
@@ -269,9 +271,9 @@
                                                     <select class="form-select select-style " name="Branch"
                                                         id="Branch" required>
                                                         <option> </option>
-                                                        <option value=""> الرئيسي  </option>
-                                                        <option value="">  الحزام الذهبي   </option>
-                                                        <option value=""> الياسمين </option>
+                                                        <option value="الرئيسي"> الرئيسي  </option>
+                                                        <option value=" الحزام الذهبي">  الحزام الذهبي   </option>
+                                                        <option value="الياسمين"> الياسمين </option>
 
                                                     </select>
                                                     <div class="invaild">
@@ -291,8 +293,8 @@
                                                     <select class="form-select select-style " name="Account"
                                                         id="Account" required>
                                                         <option> </option>
-                                                        <option value=""> إيرادات المستأجرين بمصرف الإنماء  </option>
-                                                        <option value="">   إيرادات المستأجرين بمصرف البلاد  </option>
+                                                        <option value="إيرادات المستأجرين بمصرف الإنماء "> إيرادات المستأجرين بمصرف الإنماء  </option>
+                                                        <option value=" إيرادات المستأجرين بمصرف البلاد ">   إيرادات المستأجرين بمصرف البلاد  </option>
 
                                                     </select>
                                                     <div class="invaild">
@@ -312,8 +314,8 @@
                                                         <div class="col-auto">
                                                             <p> رقم الحساب  </p>
                                                         </div>
-                                                        <div class=" col-md-auto Saved-data">
-                                                            <p class="d-none"> SA67004004100400001 </p>
+                                                        <div class=" col-md-auto Saved-data hidden-data">
+                                                            <p> SA67004004100400001 </p>
                                                         </div>
                                                     </div>
                                                    
@@ -323,8 +325,8 @@
                                                         <div class="col-auto">
                                                             <p> البنك    </p>
                                                         </div>
-                                                        <div class=" col-md-auto Saved-data">
-                                                            <p class="d-none"> البلاد </p>
+                                                        <div class=" col-md-auto Saved-data hidden-data">
+                                                            <p> البلاد </p>
                                                         </div>
                                                     </div>
                                                    </div>
@@ -698,7 +700,30 @@
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../../scripts/Scripts.js"></script>
+    <script>
+        const BranchSelect = document.getElementById('Branch');
+        const AccountSelect = document.getElementById('Account');
+        const hiddenDataElements = document.querySelectorAll('.hidden-data');
+    
 
+        function checkSelection() {
+            const isFinanceYearSelected = BranchSelect.value !== '';
+            const isQuarterSelected = AccountSelect.value !== '';
+    
+            if (isFinanceYearSelected && isQuarterSelected) {
+                hiddenDataElements.forEach(element => {
+                    element.classList.remove('hidden-data');
+                });
+            } else {
+                hiddenDataElements.forEach(element => {
+                    element.classList.add('hidden-data');
+                });
+            }
+        }
+    
+        BranchSelect.addEventListener('change', checkSelection);
+        AccountSelect.addEventListener('change', checkSelection);
+    </script>
 </body>
 
 </html>
