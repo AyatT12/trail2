@@ -13,7 +13,8 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
     <link rel="stylesheet" href="../../../style/Layout.css">
-    <link rel="stylesheet" href="../../../style/content.css">    <!-- <link rel="stylesheet" href="../../../style/english.css"> --> 
+    <link rel="stylesheet" href="../../../style/content.css">  
+      <!-- <link rel="stylesheet" href="../../../style/english.css">  -->
 
 </head>
 
@@ -527,8 +528,19 @@
                                                                 
                                                                 <div class="row ">
                                                                     <div class="col-md-6">
-                                                                        <button type="button" class="btn modal-btn " id="Doc2-modal-button" data-bs-toggle="modal" href="#Doc2-photo-modal"><div class="row align-items-center"><div class="col">صورة رخصة القيادة </div> <div class="col-auto"><div class="systems-check2"><i class="fa-solid fa-check text-white"></i></div></div></div></button>
-                                                                    </div>
+                                                                        <button type="button" class="btn modal-btn"
+                                                                        data-bs-toggle="modal"
+                                                                        href="#License-photo-modal">
+                                                                        <div class="row align-items-center">
+                                                                            <div class="col">صورة رخصة القيادة</div>
+                                                                            <div class="col-auto">
+                                                                                <div class="systems-check-license">
+                                                                                    <i class="fa-solid fa-check text-white"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </button>                                                  
+                                                                  </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -870,35 +882,32 @@
                 </div>
             </div>
         </div>
-         <!-- document modal -->
-         <div class="modal fade" id="Doc2-photo-modal" tabindex="-1" aria-hidden="true">
+        <!-- License modal -->
+        <div class="modal fade" id="License-photo-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
-                <div class="modal-content Doc2-photo-modal-content p-3">
-                    <div class="modal-body Doc2-photo-modal-body">
-                        <div class="Doc2-Card">
-                            <div class="Doc2-main-container" id="removeIDImg2"></div>
-                            <div class="Doc2-upload-container" id="Doc2-upload-container">
-
-
-                            </div>
+                <div class="modal-content License-photo-modal-content p-3">
+                    <div class="modal-body License-photo-modal-body">
+                        <div class="License-Card">
+                            <div class="License-main-container" id="removeLicenseImg"></div>
+                            <div class="License-upload-container" id="License-upload-container"></div>
                         </div>
                         <br>
                         <div class="row">
                             <div class="col">
-                                <div class="Doc2-btn-card p-2">
-                                    <img src="../../../images/save (2).svg" class="w-100" id="Doc2-photo-save">
+                                <div class="License-btn-card p-2">
+                                    <img src="../../../images/save (2).svg" class="w-100" id="License-photo-save">
                                 </div>
                             </div>
 
                             <div class="col">
-                                <div class="Doc2-btn-card p-2">
-                                    <img src="../../../images/Camera.svg" class="w-100" id="openCamera2">
+                                <div class="License-btn-card p-2">
+                                    <img src="../../../images/Camera.svg" class="w-100" id="openCameraLicense">
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="Doc2-btn-card p-2">
-                                    <img src="../../../images/Pic.svg" class="w-100" id="UploadPic2">
-                                    <input type="file" id="Doc2imageUpload" accept="image/*" style="display: none;">
+                                <div class="License-btn-card p-2">
+                                    <img src="../../../images/Pic.svg" class="w-100" id="UploadLicensePic">
+                                    <input type="file" id="LicenseimageUpload" accept="image/*" style="display: none;">
                                 </div>
                             </div>
                         </div>
@@ -962,7 +971,7 @@
     <script src="../../../scripts/Scripts.js"></script>
     <script src="../../../scripts/uploadPic.js"></script>
     <script src="../../../scripts/signature.js"></script>
-    <!-- <script src="../../../scripts/Licence.js"></script> -->
+    <script src="../../../scripts/uploadPic2.js"></script>
 
 </body>
 
