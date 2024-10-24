@@ -29,6 +29,7 @@ scroll-behavior: smooth;
 body {
   background-color:var(--body-color);
   direction: rtl;
+  font-size: .875rem;
 }
 .navbar{
   background-color: #ffce94;
