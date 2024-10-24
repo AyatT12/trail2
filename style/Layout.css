@@ -34,8 +34,6 @@ body {
 .navbar{
   background-color: #ffce94;
   z-index: 9;
-  position: sticky;
-  top: 0;
 }
 .navbar-nav .dropdown-menu{
     position: absolute;
@@ -705,8 +703,13 @@ body.dark .sidebar li a:hover .text {
       left: 0;
       right: auto;
   }
+
 }
 @media (max-width: 1300px) {
+  .navbar{
+    position: sticky;
+    top: 0;
+  }
 #userDropdown{
     align-items: center;
     justify-content: center;
